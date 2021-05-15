@@ -1,0 +1,82 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-black');
+
+.main-container {
+    width: 50vw;
+    height: 100vh;
+    background-repeat:repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    background-color: #2C2F2F;
+    color: #E2E8E8;
+    background-image: url(../../img/fabric_texture_dark.png);
+    background-blend-mode: hard-light;
+}
+
+.right {
+    background-color: #E2E8E8;
+    color: #2C2F2F;
+    background-image: url(../../img/fabric_texture.png);
+}
+
+h1, h2 {
+    font-family: 'Gotham Black', sans-serif;
+}
+
+#name {
+    margin-top: 10vh;
+    font-size: 6vh;
+}
+
+#name.left {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#name.right {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.button {
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    width: 10vw;
+}
+
+#about.button {
+    align-self: flex-end;
+    border: solid 1px #E2E8E8;
+    color: #E2E8E8;
+    background: none;
+}
+
+#about.button:hover {
+    border: solid 1px transparent;
+    color: #2C2F2F;
+    background-color: #E2E8E8;
+}
+
+#contact.button {
+    align-self: flex-start;
+    border: solid 1px #2C2F2F;
+    color: #2C2F2F;
+    background: none;
+}
+
+#contact.button:hover {
+    border: solid 1px transparent;
+    color: #E2E8E8;
+    background-color: #2C2F2F;
+}
+
+
+
+
+#title {
+    text-align: center;
+    margin-top: 20vh;
+}
