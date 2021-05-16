@@ -3,26 +3,108 @@
 .main-container {
     width: 50vw;
     height: 100vh;
-    background-repeat:repeat;
     display: flex;
     flex-direction: column;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* cursor: none; */
 }
 
-.left {
-    background-color: #2C2F2F;
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fefefe;
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.main-container.left {
+    background: url(../../img/bg-left.jpg), url(../../img/fabric_texture_dark.png);
+    background-position: left bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: auto 100vh, auto auto;
+    background-blend-mode: multiply;
     color: #E2E8E8;
-    background-image: url(../../img/fabric_texture_dark.png);
-    background-blend-mode: hard-light;
+
 }
 
-.right {
-    background-color: #E2E8E8;
+.main-container.right {
+    background: url(../../img/bg-right.jpg), url(../../img/fabric_texture.png);
+    background-position: right bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: auto 100vh, auto auto;
+    background-blend-mode: multiply;
     color: #2C2F2F;
-    background-image: url(../../img/fabric_texture.png);
 }
+
+.cover.left {
+    content: '';
+    background: url(../../img/fabric_texture_dark.png) #2C2F2F repeat;
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50vw;
+    left: 0;
+    animation: fadein .5s linear;
+    -moz-animation: fadein .5s linear;
+    -o-animation: fadein .5s linear;
+    -webkit-animation: fadein .5s linear;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.cover.right {
+    content: '';
+    background: url(../../img/fabric_texture.png) #E2E8E8 repeat;
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50vw;
+    animation: fadein .5s linear;
+    -moz-animation: fadein .5s linear;
+    -o-animation: fadein .5s linear;
+    -webkit-animation: fadein .5s linear;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.cover.right.transparent {
+    animation: fadeout .5s linear;
+    -moz-animation: fadeout .5s linear;
+    -o-animation: fadeout .5s linear;
+    -webkit-animation: fadeout .5s linear;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.cover.left.transparent {
+    animation: fadeout .5s linear;
+    -moz-animation: fadeout .5s linear;
+    -o-animation: fadeout .5s linear;
+    -webkit-animation: fadeout .5s linear;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
 
 h1, h2 {
     font-family: 'Gotham Black', sans-serif;
+    background: none !important;
+    z-index: 10;
 }
 
 #name {
@@ -45,6 +127,7 @@ h1, h2 {
     margin: 10px 15px;
     border-radius: 5px;
     width: 10vw;
+    z-index: 10;
 }
 
 #about.button {
@@ -73,10 +156,149 @@ h1, h2 {
     background-color: #2C2F2F;
 }
 
+.title-container {
+    align-self: center;
+    text-align: center;
+    margin-top: 50vh;
+    z-index: 10;
+    border-radius: 15px;
+}
 
+.title-container.left {
+    animation: leftbuttonoff .5s;
+    -moz-animation: leftbuttonoff .5s;
+    -webkit-animation: leftbuttonoff .5s;
+    -o-animation: leftbuttonoff .5s;
+}
 
+.title-container.right {
+    animation: rightbuttonoff .5s;
+    -moz-animation: rightbuttonoff .5s;
+    -webkit-animation: rightbuttonoff .5s;
+    -o-animation: rightbuttonoff .5s;
+}
+
+.title-container.right.transparent {
+    background-color: rgba(226,232,232,.7);
+    animation: rightbuttonon .5s;
+    -moz-animation: rightbuttonon .5s;
+    -webkit-animation: rightbuttonon .5s;
+    -o-animation: rightbuttonon .5s;
+}
+
+.title-container.left.transparent {
+    background-color: rgba(44,47,47,.7);
+    animation: leftbuttonon .5s;
+    -moz-animation: leftbuttonon .5s;
+    -webkit-animation: leftbuttonon .5s;
+    -o-animation: leftbuttonon .5s;
+}
 
 #title {
-    text-align: center;
-    margin-top: 20vh;
+    padding: 20px 40px;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-moz-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-o-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-o-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes rightbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(226,232,232,.7);}
+}
+@-o-keyframes rightbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(226,232,232,.7);}
+}
+@-webkit-keyframes rightbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(226,232,232,.7);}
+}
+@-moz-keyframes rightbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(226,232,232,.7);}
+}
+
+@keyframes rightbuttonoff {
+    from {background-color: rgba(226,232,232,.7);}
+    to {background-color: transparent;}
+}
+@-o-keyframes rightbuttonoff {
+    from {background-color: rgba(226,232,232,.7);}
+    to {background-color: transparent;}
+}
+@-webkit-keyframes rightbuttonoff {
+    from {background-color: rgba(226,232,232,.7);}
+    to {background-color: transparent;}
+}
+@-moz-keyframes rightbuttonoff {
+    from {background-color: rgba(226,232,232,.7);}
+    to {background-color: transparent;}
+}
+
+@keyframes leftbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(44,47,47,.7);}
+}
+@-o-keyframes leftbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(44,47,47,.7);}
+}
+@-webkit-keyframes leftbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(44,47,47,.7);}
+}
+@-moz-keyframes leftbuttonon {
+    from {background-color: transparent;}
+    to {background-color: rgba(44,47,47,.7);}
+}
+
+@keyframes leftbuttonoff {
+    from {background-color: rgba(44,47,47,.7);}
+    to {background-color: transparent;}
+}
+@-o-keyframes leftbuttonoff {
+    from {background-color: rgba(44,47,47,.7);}
+    to {background-color: transparent;}
+}
+@-webkit-keyframes leftbuttonoff {
+    from {background-color: rgba(44,47,47,.7);}
+    to {background-color: transparent;}
+}
+@-moz-keyframes leftbuttonoff {
+    from {background-color: rgba(44,47,47,.7);}
+    to {background-color: transparent;}
 }
