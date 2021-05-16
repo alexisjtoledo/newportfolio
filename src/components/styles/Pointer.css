@@ -1,0 +1,20 @@
+.cursor {
+    width: 53px;
+    height: 80px;
+    border: none;
+    border-radius: none;
+    position: fixed;
+    transform: translate(-20%, -8%);
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: all 150ms ease;
+    transition-property: opacity;
+}
+
+.cursor--hidden {
+    opacity: 0;
+}
+
+
+
