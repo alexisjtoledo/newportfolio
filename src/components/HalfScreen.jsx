@@ -1,5 +1,6 @@
 /* COMPONENTS */
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 /* STYLES */
 import './styles/HalfScreen.css'
@@ -8,8 +9,9 @@ const HalfScreen = props => {
 
     const { style, title, name } = props.data
 
-    /* TRANSPARENCIES HANDLER */
+    /*   */
     const [transparent, setTransparent] = useState(false)
+    const [history] = useState(useHistory())
 
     /* CLASSES TOGGLERS */
     const FadeIn = () => {
@@ -22,16 +24,18 @@ const HalfScreen = props => {
 
     /* BUTTONS FUNCTIONS */
     const MainClick = e => {
-        console.log(e.type)
+        e.type === 'left'
+            ? history.push('/developer')
+            : history.push('/designer')
     }
 
     const AboutClick = e => {
-        console.log('ABOUT')
+        history.push('/about')
         e.stopPropagation()
     }
 
     const ContactClick = e => {
-        console.log('CONTACT')
+        history.push('/contact')
         e.stopPropagation()
     }
 

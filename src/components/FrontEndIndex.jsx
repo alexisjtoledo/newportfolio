@@ -1,12 +1,10 @@
 import React from 'react'
 
-const FrontEndIndex = props => {
-
-    const { style, title } = props.data
+const FrontEndIndex = () => {
 
     return (
         <div>
-            {`Estilo: ${style} Tìtulo: ${title}`}
+            Developer
         </div>
     )
 }

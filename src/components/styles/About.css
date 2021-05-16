@@ -1,0 +1,93 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.about-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2C2F2F url(../../img/fabric_texture_dark.png) repeat;
+    background-blend-mode: hard-light;
+}
+
+.text-canvas {
+    display: flex;
+    width: 80vw;
+    height: 65vh;
+    background: #E2E8E8 url(../../img/fabric_texture.png) repeat;
+    box-shadow: 10px 10px 20px #222222 ;
+    border-radius: 10px;
+    margin-top: -10vh;
+}
+
+.text-container {
+    margin: 10vh 5vh;
+}
+
+.picture-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 10vw;
+    overflow: hidden;
+    box-shadow: .5vh .5vh 1vh #2C2F2F;
+    border: solid 10px #E2E8E8;
+    z-index: 5;
+}
+
+.picture {
+    width: 15vw;
+    height: 15vw;
+}
+
+.about-title {
+    font-family: 'Gotham Bold', sans-serif;
+    font-size: 3vh;
+    color: #2C2F2F;
+}
+
+.about-text {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 2vh;
+    color: #2C2F2F;
+    margin-top: 1.5vh;
+}
+
+.about-text strong {
+    font-family: 'Gotham Bold', sans-serif;
+}
+
+.signature {
+    font-family: 'Sacramento', cursive;
+    font-size: 5vh;
+    text-align: right;
+    margin: 5vh 3vw 0 0;
+    color: #2C2F2F;
+    transform: rotate(-5deg);
+}
+
+/* .social-media {
+
+} */
+
+.social-buttons {
+    display:inline;
+    list-style-type: none;
+}
+
+.sm-buttons {
+    float: left;
+    width: 2.5vh;
+    height: 2.5vh;
+    margin: 2vh 0;
+    padding: 0 1vh 1vh 1vh;
+    border-bottom: transparent 2px solid;
+}
+
+.sm-buttons:hover {
+    border-bottom: #49C0B6 solid 2px;
+}

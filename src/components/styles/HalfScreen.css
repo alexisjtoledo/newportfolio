@@ -9,7 +9,6 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    /* cursor: none; */
 }
 
 .main-container.left {
@@ -87,8 +86,6 @@
     -webkit-animation-fill-mode: forwards;
 }
 
-
-
 h1, h2 {
     font-family: 'Gotham Black', sans-serif;
     background: none !important;
@@ -96,26 +93,27 @@ h1, h2 {
 }
 
 #name {
-    margin-top: 10vh;
+    margin-top: 15vh;
     font-size: 6vh;
 }
 
 #name.left {
     text-align: right;
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 
 #name.right {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 1vw;
 }
 
 .button {
-    padding: 10px 15px;
-    margin: 10px 15px;
-    border-radius: 5px;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    border-radius: .5vh;
     width: 10vw;
     z-index: 10;
+    font-size: 1vh;
 }
 
 #about.button {
@@ -149,7 +147,7 @@ h1, h2 {
     text-align: center;
     margin-top: 50vh;
     z-index: 10;
-    border-radius: 15px;
+    border-radius: 1vh;
 }
 
 .title-container.left {
@@ -183,9 +181,8 @@ h1, h2 {
 }
 
 #title {
-    padding: 20px 40px;
+    padding: 1vh 2vw;
 }
-
 
 /* ANIMATIONS */
 
