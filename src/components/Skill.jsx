@@ -11,7 +11,6 @@ const Skill = ({params}) => {
     const [value, setValue] = useState(0)
 
     useEffect(() => {
-        console.log(params);
         setTimeout(
             () => {
                 setValue(newValue)

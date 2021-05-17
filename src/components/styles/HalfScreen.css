@@ -127,6 +127,7 @@ h1, h2 {
     border: solid 1px transparent;
     color: #2C2F2F;
     background-color: #E2E8E8;
+    cursor: none;
 }
 
 #contact.button {
@@ -140,6 +141,7 @@ h1, h2 {
     border: solid 1px transparent;
     color: #E2E8E8;
     background-color: #2C2F2F;
+    cursor: none;
 }
 
 .title-container {

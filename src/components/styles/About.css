@@ -102,6 +102,7 @@
     -moz-animation: mousein .5s;
     -webkit-animation: mousein .5s;
     -o-animation: mousein .5s;
+    cursor: pointer;
 }
 
 .skills {
