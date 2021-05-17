@@ -50,6 +50,10 @@
     color: #2C2F2F;
 }
 
+.about-title:last-of-type {
+    margin-top: 3vh;
+}
+
 .about-text {
     font-family: 'Gotham Book', sans-serif;
     font-size: 2vh;
@@ -85,9 +89,56 @@
     height: 2.5vh;
     margin: 2vh 0;
     padding: 0 1vh 1vh 1vh;
-    border-bottom: transparent 2px solid;
+    /* border-bottom: transparent 2px solid; */
+    animation: mouseout 1s;
+    -moz-animation: mouseout 1s;
+    -webkit-animation: mouseout 1s;
+    -o-animation: mouseout 1s;
 }
 
 .sm-buttons:hover {
-    border-bottom: #49C0B6 solid 2px;
+    /* border-bottom: #49C0B6 solid 2px; */
+    animation: mousein .5s;
+    -moz-animation: mousein .5s;
+    -webkit-animation: mousein .5s;
+    -o-animation: mousein .5s;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes mousein {
+    from {border-bottom: transparent 2px solid;}
+    to {border-bottom: #49C0B6 solid 2px;}
+}
+@-moz-keyframes mousein {
+    from {border-bottom: transparent 2px solid;}
+    to {border-bottom: #49C0B6 solid 2px;}
+}
+@-webkit-keyframes mousein {
+    from {border-bottom: transparent 2px solid;}
+    to {border-bottom: #49C0B6 solid 2px;}
+}
+@-o-keyframes mousein {
+    from {border-bottom: transparent 2px solid;}
+    to {border-bottom: #49C0B6 solid 2px;}
+}
+
+@keyframes mouseout {
+    from {border-bottom: #49C0B6 solid 2px;}
+    to {border-bottom: transparent 2px solid;}
+}
+@-o-keyframes mouseout {
+    from {border-bottom: #49C0B6 solid 2px;}
+    to {border-bottom: transparent 2px solid;}
+}
+@-webkit-keyframes mouseout {
+    from {border-bottom: #49C0B6 solid 2px;}
+    to {border-bottom: transparent 2px solid;}
+}
+@-moz-keyframes mouseout {
+    from {border-bottom: #49C0B6 solid 2px;}
+    to {border-bottom: transparent 2px solid;}
 }

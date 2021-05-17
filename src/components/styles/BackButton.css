@@ -1,0 +1,130 @@
+.backbtn-container {
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5vh;
+    overflow: hidden;
+    background-color: #E2E8E8;
+    animation: pulse 5s infinite;
+    -o-animation: pulse 5s infinite;
+    -moz-animation: pulse 5s infinite;
+    -webkit-animation: pulse 5s infinite;
+    z-index: 9999;
+}
+
+.back-arrow {
+    width: 5vh;
+    height: 5vh;
+    animation: offclick 1s;
+    -o-animation: offclick 1s;
+    -moz-animation: offclick 1s;
+    -webkit-animation: offclick 1s;
+}
+
+.back-arrow.mouseon {
+    animation: onclick 1s;
+    -o-animation: onclick 1s;
+    -moz-animation: onclick 1s;
+    -webkit-animation: onclick 1s;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.home-icon {
+    width: 4vh;
+    height: 4vh;
+    margin-top: 1.5vh;
+}
+
+@keyframes onclick {
+    from{ margin-top: 0vh; }
+    to{ margin-top: -6vh; }
+}
+@-o-keyframes onclick {
+    from{ margin-top: 0vh;}
+    to{ margin-top: -6vh; }
+}
+@-webkit-keyframes onclick {
+    from{ margin-top: 0vh;}
+    to{ margin-top: -6vh; }
+}
+@-moz-keyframes onclick {
+    from{ margin-top: 0vh;}
+    to{ margin-top: -6vh; }
+}
+
+@keyframes offclick {
+    from{ margin-top: -6vh;}
+    to{ margin-top: 0vh; }
+}
+@-o-keyframes offclick {
+    from{ margin-top: -6vh;}
+    to{ margin-top: 0vh; }
+}
+@-webkit-keyframes offclick {
+    from{ margin-top: -6vh;}
+    to{ margin-top: 0vh; }
+}
+@-moz-keyframes offclick {
+    from{ margin-top: -6vh;}
+    to{ margin-top: 0vh; }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    
+    50% {
+        box-shadow: 0 0 2vh #49C0B6;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
+}
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    
+    50% {
+        box-shadow: 0 0 2vh #49C0B6;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
+}
+@-o-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    
+    50% {
+        box-shadow: 0 0 2vh #49C0B6;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
+}
+@-moz-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    
+    50% {
+        box-shadow: 0 0 2vh #49C0B6;
+    }
+    
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
+}

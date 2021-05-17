@@ -2,37 +2,49 @@ import React from 'react'
 import './styles/About.css'
 import photo from '../img/profile.jpg'
 import { LogoLinkedin, LogoGithub, LogoFlickr, Mail } from 'react-ionicons'
-
+import BackButton from './BackButton'
+import { ABOUT_DATA } from '../constants/Data'
+import Skill from './Skill'
 
 const About = () => {
 
+    const DATA = ABOUT_DATA.text
+    const SKILLS = ABOUT_DATA.skills
 
+    const openGitHub = () => { window.open('https://github.com/alexisjtoledo/', '_blank') }
+    const openLinkedIn = () => { window.open('https://www.linkedin.com/in/alexistoledo/?locale=en_US', '_blank') }
+    const openFlickr = () => { window.open('http://flickr.com/photos/alexisjtoledo/albums', '_blank') }
+    const openMail = () => { window.open('mailto:alexis.toledo@live.com', '_blank') }
 
     return (
         <div className='about-container'>
+            <BackButton />
             <div className='picture-frame'>
                 <img src={photo} alt='Alexis Toledo' className='picture' />
             </div>
             <div className="text-canvas">
                 <div className='text-container'>
                     <h6 className="about-title">
-                        Welcome!
+                        Hi, I'm Alexis!
                     </h6>
-                    <p className="about-text">
-                        Lorem ipsum <strong>dolor sit amet consectetur adipisicing</strong> elit. Aspernatur, dolor esse consequuntur magni ab quisquam voluptate quia dolores modi, ea adipisci incidunt illum quos nesciunt illo animi ex quod nobis.
-                        Corporis, suscipit. Reprehenderit soluta veniam iure a corrupti. Omnis dicta tempore quae porro ipsum enim provident, repellat delectus quam fugiat, aliquid est unde. Inventore culpa numquam, repellat recusandae quod consectetur?
-                    </p>
-                    <p className="about-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus omnis cum in iusto aliquid autem eveniet dolores perferendis, molestiae ad ea facilis expedita ut quam, odio, fugiat atque sunt magni?
-                        Nulla reprehenderit suscipit quisquam, odit, ea eum dolor nobis autem culpa explicabo sed qui assumenda adipisci. Possimus magni voluptatem error nostrum pariatur? Temporibus aut voluptatem eius est maxime nulla excepturi.
-                    </p>
-                    <p className="about-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit nihil unde sed id fugiat repellat magni dolor, molestias quo quos, dolorem obcaecati facilis expedita vero recusandae placeat harum amet.
-                        Quas, adipisci fugiat. Libero eius in reiciendis, est temporibus debitis corporis itaque fugiat velit voluptates quidem dolorum quos necessitatibus voluptatum voluptatem modi quod sequi magni maxime laudantium. Repellendus, facere laboriosam.
-                    </p>
-                    <h5 className="signature">
+                    {
+                        DATA.map(
+                            (item, index) => <p className="about-text" key={index}>{item}</p>
+                        )
+                    }
+                    
+                    <h6 className="about-title">Some of my skills</h6>
+                    <div className="skills">
+                        {
+                            SKILLS.map(
+                                item => <Skill params={item} key={item.type} />
+                            )
+                        }
+                    </div>
+
+                    {/* <h5 className="signature">
                         Alexis Toledo
-                    </h5>
+                    </h5> */}
                 </div>
             </div>
             <div className="social-media">
@@ -42,25 +54,25 @@ const About = () => {
                             color={'#E2E8E8'}
                             height="100%"
                             width="100%"
-                            onClick={() => alert('Hi!')} 
+                            onClick={() => openLinkedIn()} 
                         /></li>
                     <li className="sm-buttons"><LogoGithub 
                             color={'#E2E8E8'}
                             height="100%"
                             width="100%"
-                            onClick={() => alert('Hi!')} 
+                            onClick={() => openGitHub()} 
                         /></li>
                     <li className="sm-buttons"><LogoFlickr 
                             color={'#E2E8E8'}
                             height="100%"
                             width="100%"
-                            onClick={() => alert('Hi!')} 
+                            onClick={() => openFlickr()} 
                         /></li>
                     <li className="sm-buttons"><Mail 
                             color={'#E2E8E8'}
                             height="100%"
                             width="100%"
-                            onClick={() => alert('Hi!')} 
+                            onClick={() => openMail()} 
                         /></li>
                 </ul>
             </div>

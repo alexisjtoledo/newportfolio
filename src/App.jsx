@@ -8,7 +8,6 @@ import Home from './components/Home'
 import FrontEndIndex from './components/FrontEndIndex'
 import GraphicDesignIndex from './components/GraphicDesignIndex'
 import About from './components/About'
-import Contact from './components/Contact'
 
 /* STYLES */
 import './constants/globalStyles.css'
@@ -25,9 +24,6 @@ function App() {
         </Route>
         <Route path='/about'>
           <About />
-        </Route>
-        <Route path='/contact'>
-          <Contact />
         </Route>
         <Route path='/home'>
           <Home /> 

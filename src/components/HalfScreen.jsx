@@ -35,7 +35,7 @@ const HalfScreen = props => {
     }
 
     const ContactClick = e => {
-        history.push('/contact')
+        window.open('mailto:alexis.toledo@live.com', '_blank')
         e.stopPropagation()
     }
 

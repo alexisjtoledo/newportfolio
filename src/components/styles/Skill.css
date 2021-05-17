@@ -1,0 +1,23 @@
+.skill-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0 1vh 0;
+    height: 12vh;
+}
+
+.skill {
+    height: 10vh;
+    width: 10vh;
+}
+
+.label {
+    text-align: center;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 10vh;
+    margin-top: -8vh;
+    z-index: 20;
+    padding: 1.5vh;
+}
