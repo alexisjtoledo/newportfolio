@@ -6,3 +6,20 @@
 body {
   background-color: #2C2F2F;
 }
+
+@keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-moz-keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-o-keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}

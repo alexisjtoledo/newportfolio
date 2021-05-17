@@ -10,6 +10,13 @@
     align-items: center;
     background: #2C2F2F url(../../img/fabric_texture_dark.png) repeat;
     background-blend-mode: hard-light;
+    animation: fadein 1s linear;
+    -moz-animation: fadein 1s linear;
+    -webkit-animation: fadein 1s linear;
+    -o-animation: fadein 1s linear;
+    animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .text-canvas {
