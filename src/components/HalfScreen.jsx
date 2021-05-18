@@ -25,8 +25,12 @@ const HalfScreen = props => {
     /* BUTTONS FUNCTIONS */
     const MainClick = e => {
         e.type === 'left'
-            ? history.push('/developer')
-            : history.push('/designer')
+            ? history.push({
+                pathname: '/developer', state: { type: style },
+            })
+            : history.push({
+                pathname: '/designer', state: { type: style },
+            })
     }
 
     const AboutClick = e => {

@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-black');
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,26 @@
 
 body {
   background-color: #2C2F2F;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+p {
+  font-family: 'Gotham Book', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Gotham Black', sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Gotham Bold', sans-serif;
+}
+
+strong {
+  font-family: 'Gotham Bold', sans-serif;
 }
 
 @keyframes fadein {

@@ -6,7 +6,7 @@ import { HALF_FRONTEND, HALF_DESIGN } from '../constants/Data'
 
 export const Home = () => {
     return (
-        <div className='container'>
+        <div className='home-container'>
             <Pointer />
             <HalfScreen data={HALF_FRONTEND} />
             <HalfScreen data={HALF_DESIGN} />

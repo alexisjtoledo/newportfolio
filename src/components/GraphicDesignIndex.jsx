@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState }  from 'react'
+import { useHistory } from 'react-router-dom'
+import ProjectIndex from './ProjectIndex'
 
 const GraphicDesignIndex = () => {
 
+
+    const [history] = useState(useHistory())
+    const [type] = useState(history.location.state.type)
+
     return (
         <div>
-            Designer
+            <ProjectIndex type={type}/>
         </div>
     )
 }

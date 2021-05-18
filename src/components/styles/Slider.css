@@ -1,0 +1,36 @@
+.slider-container {
+    width: 80vh;
+    height: 45vh;
+}
+
+.btn-prev {
+    width: 5vh;
+    height: 10vh;
+    padding: .1vh .2vh .1vh .1vh;
+    border-radius: 0 1.5vh 1.5vh 0;
+    background-color: rgba(20,20,20,.8);
+    z-index: 999;
+    border: none;
+    position: absolute;
+    top: 38%;
+    left: 0;
+}
+
+.btn-next {
+    width: 5vh;
+    height: 10vh;
+    padding: .1vh .2vh .1vh .1vh;
+    border-radius: 0 1.5vh 1.5vh 0;
+    background-color: rgba(20,20,20,.8);
+    z-index: 999;
+    border: none;
+    position: absolute;
+    top: 38%;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.slider-image {
+    width: 80vh !important;
+    height: 45vh !important;
+}

@@ -1,14 +1,8 @@
-@import url('http://fonts.cdnfonts.com/css/gotham-black');
-
 .main-container {
     width: 50vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .main-container.left {
@@ -87,7 +81,6 @@
 }
 
 h1, h2 {
-    font-family: 'Gotham Black', sans-serif;
     background: none !important;
     z-index: 10;
 }
