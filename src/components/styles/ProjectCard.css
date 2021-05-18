@@ -5,15 +5,29 @@
     box-shadow: 10px 10px 20px #222222 ;
     border-radius: 1vh;
     overflow: hidden;
-    margin-left: 10vh;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
+    cursor: none;
 }
 
-.project-card:first-of-type {
-    margin-left: 30vh;
+/* 
+.prev {
+    width: 10vh;
+    height: 20vh;
+    position: fixed;
+    top: 40vh;
+    left: 5vh;
 }
+
+.next {
+    width: 10vh;
+    height: 20vh;
+    position: fixed;
+    top: 40vh;
+    right: 5vh;
+    transform: rotate(180deg);
+} */
 
 .project-body {
     padding: 3vh 3vh;

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Slider from './Slider'
 import './styles/ProjectCard.css'
 import { 
@@ -14,46 +14,70 @@ import {
     LogoJavascript,
     LogoNodejs,
     LogoReact,
-    LogoFirebase
+    LogoFirebase,
 } from 'react-ionicons'
+import Pointer from './Pointer'
 
 const ProjectCard = props => {
 
     const project = props.project
+    const [margin, setMargin] = useState('')
+
+    useEffect(() => {
+        dinamicMargins(window.innerWidth)
+        window.addEventListener('resize', e => {
+            const newWidth = e.currentTarget.innerWidth
+            dinamicMargins(newWidth)
+        })
+        return () => document.removeEventListener('resize', dinamicMargins)
+    })
+
+    const dinamicMargins = width => {
+        const card = document.querySelector('.project-card')
+        let cardWidth = getComputedStyle(card).width
+        cardWidth = cardWidth.replace('px', '')
+        const parsedCardWidth = parseInt(cardWidth, 0)
+        const newMargin = ((width - parsedCardWidth) / 2)
+        const parsedNewMargin = `${newMargin}px`
+        setMargin(parsedNewMargin)
+    }
 
     return (
-        <div className='project-card'>
-            <div className="project-img">
-                <Slider pictures={project[0].pictures} quantity={project[0].picturesQuantity}/>
+        <Fragment>
+            <Pointer />
+            <div className='project-card' style={{marginLeft: margin, marginRight: margin }}>
+                <div className="project-img">
+                    <Slider pictures={project[0].pictures} quantity={project[0].picturesQuantity}/>
+                </div>
+                <div className="project-body">
+                    <div className="project-title-container">
+                        <h5 className='project-title'>{project[0].name}</h5>
+                        <div className="project-tech">
+                            <Technologies data={project[0].technologies} />
+                        </div>
+                        
+                    </div>
+                    <div className="project-description">
+                        <p>{project[0].description}</p>
+                    </div>
+                    <div className="project-extras">
+                        <div className="project-icon">
+                            <PersonOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
+                        </div>
+                        <p className='project-extras-text'><strong>Role:</strong> {project[0].role}</p>
+                    </div>
+                    <div className="project-extras">
+                        <div className="project-icon">
+                            <CalendarOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
+                        </div>
+                        <p className='project-extras-text'><strong>Launch Date:</strong> {project[0].launchdate}</p>
+                    </div>
+                    <div className="project-buttons">
+                        <Buttons data={project[0].buttons} />
+                    </div>
+                </div>
             </div>
-            <div className="project-body">
-                <div className="project-title-container">
-                    <h5 className='project-title'>{project[0].name}</h5>
-                    <div className="project-tech">
-                        <Technologies data={project[0].technologies} />
-                    </div>
-                    
-                </div>
-                <div className="project-description">
-                    <p>{project[0].description}</p>
-                </div>
-                <div className="project-extras">
-                    <div className="project-icon">
-                        <PersonOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
-                    </div>
-                    <p className='project-extras-text'><strong>Role:</strong> {project[0].role}</p>
-                </div>
-                <div className="project-extras">
-                    <div className="project-icon">
-                        <CalendarOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
-                    </div>
-                    <p className='project-extras-text'><strong>Launch Date:</strong> {project[0].launchdate}</p>
-                </div>
-                <div className="project-buttons">
-                    <Buttons data={project[0].buttons} />
-                </div>
-            </div>
-        </div>
+        </Fragment>
     )
 }
 

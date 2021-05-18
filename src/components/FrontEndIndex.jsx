@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import ProjectIndex from './ProjectIndex'
+import BackButton from './BackButton'
 
 const FrontEndIndex = () => {
 
@@ -9,6 +10,7 @@ const FrontEndIndex = () => {
 
     return (
         <div>
+            <BackButton />
             <ProjectIndex type={type}/>
         </div>
     )
