@@ -5,14 +5,18 @@
 
 .projects-title {
     position:fixed;
-    left: 10vh;
+    left: 12vh;
     top: 2vh;
+    width: 70vw;
+    color: #E2E8E8;
 }
 
 .projects-description {
     position:fixed;
-    left: 10vh;
-    top: 6vh;
+    left: 12vh;
+    top: 7vh;
+    width: 70vw;
+    color: #E2E8E8;
 }
 
 .project-card-container {
