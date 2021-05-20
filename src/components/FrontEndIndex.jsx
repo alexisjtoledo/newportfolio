@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import ProjectIndex from './ProjectIndex'
 import BackButton from './BackButton'
 
-const FrontEndIndex = () => {
+const FrontEndIndex = props => {
 
     const [history] = useState(useHistory())
     const [type] = useState(history.location.state.type)

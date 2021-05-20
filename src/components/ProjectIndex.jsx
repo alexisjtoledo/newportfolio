@@ -1,30 +1,134 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { DEV_PROJECTS, GDS_PROJECTS } from '../constants/Data'
 import ProjectCard from './ProjectCard'
 import './styles/ProjectIndex.css'
+import Pointer from './Pointer'
+import { ChevronBack } from 'react-ionicons'
+import navigate from '../img/navigate.png'
 
 const ProjectIndex = props => {
 
     const { type } = props
     const [projects] = useState(type === 'left' ? DEV_PROJECTS : GDS_PROJECTS)
+    const [margin, setMargin] = useState('')
+    let currentScroll = 0
 
-    useState(() => {
-        
-    })
+    const dinamicMargins = onStart => {
+        const width = window.innerWidth
+        const card = document.querySelector('.project-card')
+        let cardWidth = getComputedStyle(card).width
+        cardWidth = cardWidth.replace('px', '')
+        const parsedCardWidth = parseInt(cardWidth, 0)
+        const newMargin = ((width - parsedCardWidth) / 2)
+        const parsedNewMargin = `${newMargin}px`
+        setMargin(parsedNewMargin)
+        if(!onStart) {
+            currentScroll = 0
+            window.scroll({
+                left: currentScroll,
+                behavior: 'smooth'
+            })
+        }
+    }
+
+    const clicked = e => {
+        const clickPosition = e.clientX
+        const screenMiddle = window.innerWidth / 2
+        clickPosition > screenMiddle ? scrollProject('right') : scrollProject('left')
+    }
+
+    const keyPressed = e => {
+        e.preventDefault()
+        switch (e.code) {
+            case 'ArrowRight': scrollProject('right')
+                break;
+            case 'KeyD': scrollProject('right')
+                break;
+            case 'ArrowLeft': scrollProject('left')
+                break;
+            case 'KeyA': scrollProject('left')
+                break;
+            default: break;
+        }
+    }
+
+    const scrollProject = dir => {
+        // OBTENGO EL ANCHO TOTAL DEL CONTENEDOR (STACK)
+        const stack = document.querySelector('.project-card-container')
+        let stackWidth = getComputedStyle(stack).width
+        stackWidth = stackWidth.replace('px', '')
+        const parsedStackWidth = parseInt(stackWidth, 0)
+
+        // OBTENGO EL ANCHO TOTAL DE CADA TARJETA
+        const card = document.querySelector('.pindex-container')
+        let cardWidth = getComputedStyle(card).width
+        cardWidth = cardWidth.replace('px', '')
+        const parsedCardWidth = parseInt(cardWidth, 0)
+
+        // MAX MIN
+        const maxScroll = parsedStackWidth - parsedCardWidth
+        const minScroll = 0
+
+        if (dir === 'right' && currentScroll >= maxScroll) {
+            currentScroll = 0
+        }
+
+        if (dir === 'left' && currentScroll <= minScroll) {
+            currentScroll = parsedStackWidth
+        }
+
+        if (dir === 'right') {
+            currentScroll = currentScroll += parsedCardWidth
+        }
+
+        if (dir === 'left') {
+            currentScroll = currentScroll -= parsedCardWidth
+        }
+
+        window.scroll({
+            top: 0,
+            left: currentScroll,
+            behavior: 'smooth'
+        })
+    }
+
+    const addEventListeners = () => {
+        dinamicMargins(true)
+        window.addEventListener('resize', (e) => {
+            dinamicMargins(false)
+        })
+        window.addEventListener('keydown', e => keyPressed(e))
+    }
+
+    const removeEventListeners = () => {
+        window.removeEventListener('resize', dinamicMargins)
+        window.removeEventListener('keydown', e => keyPressed(e))
+    }
+
+    useEffect(() => {
+        addEventListeners()
+        return () => removeEventListeners()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     return (
-        <div className='pindex-container' >
-            <h1 className="projects-title">TITULO DE LA SECCIÓN DE DEV</h1>
-            <p className="projects-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequatur doloribus vitae cum consequuntur nulla quidem molestias aperiam odit error neque placeat velit id eum in sequi quas, possimus harum.</p>
-
-            <div id='stack' className="project-card-container" >
-                <ProjectCard project={projects} />
-                <ProjectCard project={projects} />
-                <ProjectCard project={projects} />
-                <ProjectCard project={projects} />
-                <ProjectCard project={projects} />
+        <div className='pindex-container' onClick={e => clicked(e)} >
+            <div className="next">
+                <ChevronBack color='rgba(226,232,232,.05)' width='100%' height='100%'/>
             </div>
-            
+            <div className="prev">
+                <ChevronBack color='rgba(226,232,232,.05)' width='100%' height='100%'/>
+            </div>
+            <h2 className='next-text'>NEXT<br/>PROJECT</h2>
+            <h2 className='prev-text'>PREVIOUS<br/>PROJECT</h2>
+            <Pointer />
+            <h1 className="projects-title">SOME PROJECTS I'VE PARTICIPATED IN</h1>
+            <div id='stack' className="project-card-container">
+                <ProjectCard projects={projects} margin={margin} />
+            </div>
+            <div className="navigate">
+                <img src={navigate} alt='Move left/right by clicking or with the arrow keys' className='navigate-img'/>
+            </div>
         </div>
     )
 }

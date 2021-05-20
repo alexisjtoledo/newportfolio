@@ -14,28 +14,28 @@ import './constants/globalStyles.css'
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path='/developer'>
-          <FrontEndIndex />
-        </Route>
-        <Route path='/designer'>
-          <GraphicDesignIndex />
-        </Route>
-        <Route path='/about'>
-          <About />
-        </Route>
-        <Route path='/home'>
-          <Home /> 
-        </Route>
-        <Route path='/index'>
-          <Home /> 
-        </Route>
-        <Route exact path='/'>
-          <Home /> 
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route path='/developer'>
+            <FrontEndIndex />
+          </Route>
+          <Route path='/designer'>
+            <GraphicDesignIndex />
+          </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+          <Route path='/home'>
+            <Home /> 
+          </Route>
+          <Route path='/index'>
+            <Home /> 
+          </Route>
+          <Route exact path='/'>
+            <Home /> 
+          </Route>
+        </Switch>
+      </Router>
   )
 }
 

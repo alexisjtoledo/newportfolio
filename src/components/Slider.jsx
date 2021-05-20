@@ -28,7 +28,7 @@ const Slider = props => {
 
     return (
         <div className="slider-container">
-            <ReactSlidy itemsToPreload={quantity} keyboardNavigation infiniteLoop ArrowLeft={CustomArrowLeft} ArrowRight={CustomArrowRight}>
+            <ReactSlidy itemsToPreload={quantity} infiniteLoop ArrowLeft={CustomArrowLeft} ArrowRight={CustomArrowRight}>
                 {
                     pictures.map (item => 
                             <img src={item.src} alt={item.alt} key={item.id} className='slider-image' />

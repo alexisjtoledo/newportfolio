@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #2C2F2F;
+  background: #2C2F2F url(../img/fabric_texture_dark.png) repeat;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
