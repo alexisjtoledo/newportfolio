@@ -16,6 +16,7 @@
     animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    cursor: auto !important;
 }
 
 .text-canvas {

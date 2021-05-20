@@ -1,9 +1,7 @@
 .pindex-container {
-    max-width: 100vw;
-    max-height: 100vh;
-    cursor: none;
+    width: 100vw;
+    height: 100vh;
     -ms-overflow-style: none;
-
     scrollbar-width: none;
 }
 
@@ -31,7 +29,8 @@
 
 .navigate-img {
     height: auto;
-    width: 20vw;
+    width: 20vw;   
+
 }
 
 .project-card-container {
@@ -70,7 +69,6 @@
     position: fixed;
     top: 40vh;
     left: 10vh;
-
     color: rgba(226,232,232,.2);
     text-align: left;
     z-index: -5;

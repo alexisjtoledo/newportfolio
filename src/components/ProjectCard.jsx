@@ -42,16 +42,28 @@ const ProjectCard = props => {
                                 <p>{item.description}</p>
                             </div>
                             <div className="project-extras">
-                                <div className="project-icon">
-                                    <PersonOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
-                                </div>
-                                <p className='project-extras-text'><strong>Role:</strong> {item.role}</p>
+                                {
+                                    item.role
+                                        ? <Fragment>
+                                            <div className="project-icon">
+                                                <PersonOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
+                                            </div>
+                                            <p className='project-extras-text'><strong>Role:</strong> {item.role}</p>
+                                        </Fragment>
+                                        : null
+                                }
                             </div>
                             <div className="project-extras">
-                                <div className="project-icon">
-                                    <CalendarOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
-                                </div>
-                                <p className='project-extras-text'><strong>Launch Date:</strong> {item.launchdate}</p>
+                                {
+                                    item.launchdate
+                                        ? <Fragment>
+                                            <div className="project-icon">
+                                                <CalendarOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
+                                            </div>
+                                            <p className='project-extras-text'><strong>Launch Date:</strong> {item.launchdate}</p>
+                                        </Fragment> 
+                                        : null                                       
+                                }
                             </div>
                             <div className="project-buttons">
                                 <Buttons data={item.buttons} />

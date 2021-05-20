@@ -6,8 +6,12 @@
   padding: 0;
 }
 
-body {
+html {
   background: #2C2F2F url(../img/fabric_texture_dark.png) repeat;
+  cursor: none;
+}
+
+body {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
