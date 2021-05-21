@@ -32,6 +32,10 @@
     cursor: none;
 }
 
+.btn-hidden {
+    display: none;
+}
+
 .slider-image {
     width: 80vh !important;
     height: 45vh !important;

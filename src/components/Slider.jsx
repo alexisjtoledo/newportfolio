@@ -26,15 +26,33 @@ const Slider = props => {
         )
     }
 
+    const noArrow = props => {
+        return(
+            <button {...props} className='btn-hidden'>
+                <ChevronBack width='100%' height='100%' color='#E2E8E8' />
+            </button>
+        )
+    }
+
     return (
         <div className="slider-container">
-            <ReactSlidy itemsToPreload={quantity} infiniteLoop ArrowLeft={CustomArrowLeft} ArrowRight={CustomArrowRight}>
-                {
-                    pictures.map (item => 
-                            <img src={item.src} alt={item.alt} key={item.id} className='slider-image' />
-                    )
-                }
-            </ReactSlidy>
+            {
+                quantity === 1
+                    ? <ReactSlidy itemsToPreload={quantity} infiniteLoop ArrowLeft={noArrow} ArrowRight={noArrow}>
+                        {
+                            pictures.map (item => 
+                                    <img src={item.src} alt={item.alt} key={item.id} className='slider-image' />
+                            )
+                        }
+                    </ReactSlidy>
+                    : <ReactSlidy itemsToPreload={quantity} infiniteLoop ArrowLeft={CustomArrowLeft} ArrowRight={CustomArrowRight}>
+                        {
+                            pictures.map (item => 
+                                    <img src={item.src} alt={item.alt} key={item.id} className='slider-image' />
+                            )
+                        }
+                    </ReactSlidy>
+            }
         </div>
     )
 }
