@@ -8,6 +8,7 @@
 
 html {
   background: #2C2F2F url(../img/fabric_texture_dark.png) repeat;
+  background-blend-mode: hard-light;
   cursor: none;
 }
 

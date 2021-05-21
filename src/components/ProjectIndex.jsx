@@ -13,7 +13,12 @@ import './styles/ProjectIndex.css'
 // Data
 import { 
     DEV_PROJECTS, 
-    GDS_PROJECTS 
+    EDI_PROJECTS,
+    GDS_PROJECTS,
+    BRA_PROJECTS,
+    SIG_PROJECTS,
+    VID_PROJECTS
+
 } from '../constants/Data'
 // Images
 import navigate from '../img/navigate.png'
@@ -27,8 +32,9 @@ const ProjectIndex = props => {
      * @margin value of the dynamic margins
      * @currentScroll value of the current scroll position (X)
      */
-    const { type } = props
-    const [projects] = useState(type === 'left' ? DEV_PROJECTS : GDS_PROJECTS)
+    const { type, selected } = props
+    const [projects, setProjects] = useState([])
+        // type === 'left' ? DEV_PROJECTS : GDS_PROJECTS)
     const [margin, setMargin] = useState('')
     let currentScroll = 0
 
@@ -147,9 +153,7 @@ const ProjectIndex = props => {
      * - Keydown listener
      */
     const addEventListeners = () => {
-        window.addEventListener('resize', (e) => {
-            dinamicMargins(false)
-        })
+        window.addEventListener('resize', () => dinamicMargins(false))
         window.addEventListener('keydown', e => keyPressed(e))
     }
 
@@ -158,11 +162,39 @@ const ProjectIndex = props => {
      */
     const removeEventListeners = () => {
         window.removeEventListener('resize', dinamicMargins)
-        window.removeEventListener('keydown', e => keyPressed(e))
+        window.removeEventListener('keydown', keyPressed)
+    }
+
+    const checkData = async () => {
+        if (type === 'right') {
+            switch (selected) {
+                case 'editorial':
+                    await setProjects(EDI_PROJECTS)
+                    break;
+                case 'graphic':
+                    await setProjects(GDS_PROJECTS)
+                    break;
+                case 'branding':
+                    await setProjects(BRA_PROJECTS)
+                    break;
+                case 'signage':
+                    await setProjects(SIG_PROJECTS)
+                    break;
+                case 'video':
+                    await setProjects(VID_PROJECTS)
+                    break;
+                default:
+                    break;
+            }
+        }
+        if (type === 'left') {
+            await setProjects(DEV_PROJECTS)
+        }
+        await dinamicMargins(true)
     }
 
     useEffect(() => {
-        dinamicMargins(true)
+        checkData()
         addEventListeners()
         return () => removeEventListeners()
     // eslint-disable-next-line react-hooks/exhaustive-deps

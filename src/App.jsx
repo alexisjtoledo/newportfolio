@@ -1,4 +1,3 @@
-/* COMPONENTS */
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,16 +7,21 @@ import Home from './components/Home'
 import FrontEndIndex from './components/FrontEndIndex'
 import GraphicDesignIndex from './components/GraphicDesignIndex'
 import About from './components/About'
+import GDSectionIndex from './components/GDSectionIndex'
 
 /* STYLES */
 import './constants/globalStyles.css'
 
 function App() {
+
   return (
       <Router>
         <Switch>
           <Route path='/developer'>
             <FrontEndIndex />
+          </Route>
+          <Route path='/section'>
+            <GDSectionIndex />
           </Route>
           <Route path='/designer'>
             <GraphicDesignIndex />
