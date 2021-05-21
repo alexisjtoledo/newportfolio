@@ -28,9 +28,7 @@ const Slider = props => {
 
     const noArrow = props => {
         return(
-            <button {...props} className='btn-hidden'>
-                <ChevronBack width='100%' height='100%' color='#E2E8E8' />
-            </button>
+            <button {...props} className='btn-hidden' />
         )
     }
 
