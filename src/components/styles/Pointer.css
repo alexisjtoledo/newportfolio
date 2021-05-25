@@ -16,5 +16,9 @@
     opacity: 0;
 }
 
-
+@media (max-width: 800px) {
+    .cursor {
+        display: none;
+    }
+}
 

@@ -60,7 +60,7 @@ const ProjectCard = props => {
                                             <div className="project-icon">
                                                 <CalendarOutline width='100%' height='100%' color='rgba(44,47,47,.9)' />
                                             </div>
-                                            <p className='project-extras-text'><strong>Launch Date:</strong> {item.launchdate}</p>
+                                            <p className='project-extras-text'><strong>Date:</strong> {item.launchdate}</p>
                                         </Fragment> 
                                         : null                                       
                                 }

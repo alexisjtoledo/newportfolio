@@ -3,11 +3,8 @@
   width: 100vw;
   display: flex;
   cursor: none;
-  animation: fadein 1s linear;
-  -moz-animation: fadein 1s linear;
-  -webkit-animation: fadein 1s linear;
-  -o-animation: fadein 1s linear;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  animation: fadein 1s linear forwards;
+  -moz-animation: fadein 1s linear forwards;
+  -webkit-animation: fadein 1s linear forwards;
+  -o-animation: fadein 1s linear forwards;
 }

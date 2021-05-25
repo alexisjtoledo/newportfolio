@@ -40,3 +40,20 @@
     width: 80vh !important;
     height: 45vh !important;
 }
+
+@media (max-width: 800px) {
+    .slider-container {
+        width: 90vw;
+        height: 50vw;
+    }
+    .slider-image {
+        width: 90vw !important;
+        height: 50vw !important;
+    }
+    .btn-next {
+        cursor: pointer !important;
+    }
+    .btn-prev {
+        cursor: pointer !important;
+    }
+}

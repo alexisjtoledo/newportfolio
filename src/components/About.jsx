@@ -8,8 +8,7 @@ import Skill from './Skill'
 
 const About = () => {
 
-    const DATA = ABOUT_DATA.text
-    const SKILLS = ABOUT_DATA.skills
+    const DATA = ABOUT_DATA
 
     const openGitHub = () => { window.open('https://github.com/alexisjtoledo/', '_blank') }
     const openLinkedIn = () => { window.open('https://www.linkedin.com/in/alexistoledo/?locale=en_US', '_blank') }
@@ -28,7 +27,7 @@ const About = () => {
                         Hi, I'm Alexis!
                     </h6>
                     {
-                        DATA.map(
+                        DATA.text.map(
                             (item, index) => <p className="about-text" key={index}>{item}</p>
                         )
                     }
@@ -36,15 +35,14 @@ const About = () => {
                     <h6 className="about-title">Some of my skills</h6>
                     <div className="skills">
                         {
-                            SKILLS.map(
+                            DATA.skills.map(
                                 item => <Skill params={item} key={item.type} />
                             )
                         }
                     </div>
-
-                    {/* <h5 className="signature">
-                        Alexis Toledo
-                    </h5> */}
+                    <div className="skills-mobile">
+                        <p className='about-text'>{DATA.writtenSkills}</p>
+                    </div>
                 </div>
             </div>
             <div className="social-media">

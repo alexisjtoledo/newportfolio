@@ -7,22 +7,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: fadein 1s linear;
-    -moz-animation: fadein 1s linear;
-    -webkit-animation: fadein 1s linear;
-    -o-animation: fadein 1s linear;
-    animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation: fadein 1s linear forwards;
+    -moz-animation: fadein 1s linear forwards;
+    -webkit-animation: fadein 1s linear forwards;
+    -o-animation: fadein 1s linear forwards;
     cursor: auto !important;
 }
 
 .text-canvas {
     display: flex;
     width: 80vw;
-    height: 65vh;
+    height: auto;
     background: #E2E8E8 url(../../img/fabric_texture.png) repeat;
-    box-shadow: 10px 10px 20px #222222 ;
+    box-shadow: 0 0 10vh #111111;
     border-radius: 10px;
     margin-top: -10vh;
 }
@@ -39,8 +36,8 @@
     height: 15vw;
     border-radius: 10vw;
     overflow: hidden;
-    box-shadow: .5vh .5vh 1vh #2C2F2F;
-    border: solid 10px #E2E8E8;
+    box-shadow: 0 0 5vh #111111;
+    border: solid 1vh #E2E8E8;
     z-index: 5;
 }
 
@@ -63,19 +60,6 @@
     color: #2C2F2F;
     margin-top: 1.5vh;
 }
-
-.signature {
-    font-family: 'Sacramento', cursive;
-    font-size: 5vh;
-    text-align: right;
-    margin: 5vh 3vw 0 0;
-    color: #2C2F2F;
-    transform: rotate(-5deg);
-}
-
-/* .social-media {
-
-} */
 
 .social-buttons {
     display:inline;
@@ -105,6 +89,10 @@
 .skills {
     display: flex;
     flex-direction: row;
+}
+
+.skills-mobile {
+    display: none;
 }
 
 @keyframes mousein {
@@ -139,4 +127,66 @@
 @-moz-keyframes mouseout {
     from {border-bottom: #49C0B6 solid 2px;}
     to {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
+}
+
+@media (max-width: 800px) {
+    .text-canvas {
+        width: 90vw;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .text-container {
+        max-width: 80vw;
+        margin: 8vw 5vw;
+    }
+    
+    .picture {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .picture-frame {
+        width: 15vh;
+        height: 15vh;
+        border-radius: 15vh;
+        border: solid 1vw #E2E8E8;
+        margin-top: 0;
+        margin-bottom: -3vh;
+    }
+    
+    
+    .about-title {
+        font-size: 5vw;
+        color: #2C2F2F;
+    }
+    
+    .about-title:last-of-type {
+        margin-top: 3vh;
+    }
+    
+    .about-text {
+        font-size: 3vw;
+        color: #2C2F2F;
+        margin-top: 1.5vh;
+    }
+
+    .skills-mobile {
+        display: flex;
+    }
+    
+    .skills {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1130px) {
+    .skills-mobile {
+        display: flex;
+    }
+    
+    .skills {
+        display: none;
+    }
 }

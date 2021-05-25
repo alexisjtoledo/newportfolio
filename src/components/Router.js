@@ -1,5 +1,5 @@
 import React, { 
-    // useEffect, useState 
+    useEffect, useState 
 } from 'react'
 import {
     BrowserRouter,
@@ -11,23 +11,33 @@ import FrontEndIndex from './FrontEndIndex'
 import GraphicDesignIndex from './GraphicDesignIndex'
 import About from './About'
 import GDSectionIndex from './GDSectionIndex'
+import MobileHome from './MobileHome'
 
 const Router = () => {
 
-    // const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
 
-    // const detectPortrait = () => {
-    //     const width = window.innerWidth
-    //     const height = window.innerHeight
-        
+    const detectPortrait = () => {
+        const width = window.innerWidth
+        if (width < 800) {
+            setIsMobile(true)
+        }
+    }
 
-        
-    //     console.log()
-    // }
+    const changePlatform = () => {
+        const newWidth = window.innerWidth
+        if (newWidth < 800) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
 
-    // useEffect(() => {
-    //     detectPortrait()
-    // }, [])
+    useEffect(() => {
+        window.addEventListener('resize', () => changePlatform())
+        detectPortrait()
+        return () => window.removeEventListener('resize', changePlatform)
+    }, [])
 
     return (
         <BrowserRouter>
@@ -45,13 +55,19 @@ const Router = () => {
                     <About />
                 </Route>
                 <Route path='/home'>
-                    <Home /> 
+                    {
+                        isMobile ? <MobileHome /> : <Home /> 
+                    }
                 </Route>
                 <Route path='/index'>
-                    <Home /> 
+                    {
+                        isMobile ? <MobileHome /> : <Home /> 
+                    }
                 </Route>
                 <Route exact path='/'>
-                    <Home /> 
+                    {
+                        isMobile ? <MobileHome /> : <Home /> 
+                    }
                 </Route>
             </Switch>
         </BrowserRouter>
