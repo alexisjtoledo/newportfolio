@@ -58,6 +58,7 @@
     width: 74vh;
     height: 4vh;
     display: flex;
+    margin-top: 1vh;
 }
 
 .project-btn {
