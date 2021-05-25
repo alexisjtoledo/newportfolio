@@ -24,4 +24,4 @@ This is the new version of my Personal Portfolio. This is the virtual space I've
 
 ## Mobile
 
-![Website preview](src/img/prev-3.png "Website preview")
+![Website preview](src/img/prev-03.png "Website preview")
