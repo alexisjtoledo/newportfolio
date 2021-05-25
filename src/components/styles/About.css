@@ -128,12 +128,16 @@
 }
 
 @media (max-width: 800px) {
+    .about-container {
+        height: 90vh;
+    }
+
     .text-canvas {
         width: 90vw;
         height: auto;
         margin-top: 0;
     }
-    
+
     .text-container {
         max-width: 80vw;
         margin: 8vw 5vw;
@@ -149,7 +153,7 @@
         height: 15vh;
         border-radius: 15vh;
         border: solid 1vw #E2E8E8;
-        margin-top: 0;
+        margin-top: 3vh;
         margin-bottom: -3vh;
     }
 

@@ -18,10 +18,10 @@ This is the new version of my Personal Portfolio. This is the virtual space I've
 
 ## Web
 
-![Website preview](src/img/preview_web.jpg "Website preview")
+![Website preview](src/img/prev-01.png "Website preview")
+
+![Website preview](src/img/prev-02.png "Website preview")
 
 ## Mobile
 
-![Website preview](src/img/preview_mobile_1.jpg "Website preview")
-
-![Website preview](src/img/preview_mobile_2.jpg "Website preview")
+![Website preview](src/img/prev-3.png "Website preview")

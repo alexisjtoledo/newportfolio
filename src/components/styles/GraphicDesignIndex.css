@@ -74,3 +74,9 @@
     from { box-shadow: 0 0 1vh #49C0B6; }
     to { box-shadow: 0 0 5vh #111111; }
 }
+
+@media (max-width: 800px) {
+    .index-container {
+        height: 90vh;
+    }
+}
