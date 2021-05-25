@@ -1,6 +1,6 @@
 # Alexis Toledo Resume
 
-This is the new version of my Personal Portfolio. This is the virtual space I've created to show my work in different sections. It is a responsive website made by me using ReactJS. Most of the styles and micreinteractions were written from scratch.
+This is the new version of my Personal Portfolio, a virtual space to show my work in different sections during these years. It is a responsive website made by me using ReactJS. Most of the styles and micreinteractions were written from scratch.
 
 ## Built With
 
