@@ -1,6 +1,6 @@
 .mobile-container {
     width: 100vw;
-    height: 100vh;
+    overflow-y: hidden;
     cursor: auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     background: url('../../img/bg-left-m.jpg') no-repeat;
     background-position: left top;
     background-size: auto 50vh;
-    height: 49vh;
+    height: 50%;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     background: url('../../img/bg-right-m.jpg') no-repeat;
     background-position: left top;
     background-size: auto 50vh;
-    height: 49vh;
+    height: 50%;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -35,13 +35,13 @@
 
 .divider {
     background-color: #9A9E9E;
-    height: .5vh;
+    height: 5px;
     width: 100vw;
 }
 
 .name-mobile {
     position: fixed;
-    margin-top: 46vh;
+    /* margin-top: 65%; */
     background-color: #9A9E9E;
     padding: 1vh 2vw;
     border-radius: 3vw;
@@ -62,7 +62,7 @@
     border: none;
     background-color: #2C2F2F;
     color: #9A9E9E;
-    padding: 1vh 3vw 1vh 3vw;
+    padding: 1vh 3vh 1vh 3vh;
     border-radius: 1vh;
     margin-left: 3vw;
     margin-right: 1vw;

@@ -1,13 +1,15 @@
 // COMPONENTS
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 // STYLES
 import './styles/MobileHome.css'
 
-const MobileHome = () => {
+const MobileHome = props => {
 
     const [history] = useState(useHistory())
+    const [currentHeight, setCurrentHeight] = useState(window.innerHeight)
+    const [currentMargin, setCurrentMargin] = useState()
 
     // Click Handler
     const handleClick = where => {
@@ -34,9 +36,31 @@ const MobileHome = () => {
         }
     }
 
+    const getHeight = () => {
+        setCurrentHeight(window.innerHeight)
+        getMargin()
+    }
+
+    const getMargin = () => {
+        const name = document.getElementsByClassName('name-mobile')
+        const nameWidth = (name[0].clientHeight / 2)
+        const newMargin = (currentHeight / 2) - nameWidth
+        setCurrentMargin(newMargin)
+    }
+
+    useEffect(() => {
+        getHeight()
+        getMargin()
+        window.addEventListener('resize', () => getHeight())
+        return () =>  window.removeEventListener('resize', getHeight)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return (
-        <div className="mobile-container">
-            <div className="name-mobile">
+        <div className="mobile-container" style={{height:`${currentHeight}px`}}>
+            <div className="name-mobile" 
+            style={{marginTop:`${currentMargin}px`}}
+            >
                 <h1 className="name-mobile-text">
                     ALEXIS TOLEDO
                 </h1>
