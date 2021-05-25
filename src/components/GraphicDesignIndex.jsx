@@ -1,6 +1,9 @@
+// COMPONENTS
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import BackButton from './BackButton'
+
+// STYLES
 import './styles/GraphicDesignIndex.css'
 
 const GraphicDesignIndex = () => {
@@ -8,6 +11,7 @@ const GraphicDesignIndex = () => {
     const [history] = useState(useHistory())
     const [type] = useState(history.location.state.type)
 
+    // Click Handler
     const clickHandler = section => {
         history.push({
             pathname: '/section', state: { which: section, type: type },

@@ -1,6 +1,6 @@
+// COMPONENTS
 import React, { Fragment } from 'react'
 import Slider from './Slider'
-import './styles/ProjectCard.css'
 import { 
     PersonOutline, 
     CalendarOutline, 
@@ -16,6 +16,9 @@ import {
     LogoReact,
     LogoFirebase,
 } from 'react-ionicons'
+
+// STYLES
+import './styles/ProjectCard.css'
 
 const ProjectCard = props => {
 

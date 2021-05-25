@@ -46,13 +46,16 @@
         width: 90vw;
         height: 50vw;
     }
+
     .slider-image {
         width: 90vw !important;
         height: 50vw !important;
     }
+
     .btn-next {
         cursor: pointer !important;
     }
+
     .btn-prev {
         cursor: pointer !important;
     }

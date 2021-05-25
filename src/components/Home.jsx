@@ -1,7 +1,12 @@
+// COMPONENTS
 import React from 'react'
-import './styles/Home.css'
 import HalfScreen from './HalfScreen'
 import Pointer from './Pointer'
+
+// STYLES
+import './styles/Home.css'
+
+// DATA
 import { HALF_FRONTEND, HALF_DESIGN } from '../constants/Data'
 
 export const Home = () => {

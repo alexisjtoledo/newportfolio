@@ -1,11 +1,15 @@
+// COMPONENTS
 import React, { useState } from 'react'
-import './styles/MobileHome.css'
 import { useHistory } from 'react-router-dom'
+
+// STYLES
+import './styles/MobileHome.css'
 
 const MobileHome = () => {
 
     const [history] = useState(useHistory())
 
+    // Click Handler
     const handleClick = where => {
         switch (where) {
             case 'about':

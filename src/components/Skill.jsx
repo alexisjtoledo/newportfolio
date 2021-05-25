@@ -1,6 +1,19 @@
+// COMPONENTS
 import React, { useEffect, useState } from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar'
-import { LogoHtml5, LogoCss3, LogoJavascript, LogoNodejs, LogoReact, LogoFirebase, LogoGithub, LogoSass, LogoPython } from 'react-ionicons'
+import { 
+    LogoHtml5, 
+    LogoCss3, 
+    LogoJavascript, 
+    LogoNodejs, 
+    LogoReact, 
+    LogoFirebase, 
+    LogoGithub, 
+    LogoSass, 
+    LogoPython 
+} from 'react-ionicons'
+
+// SYTLES
 import 'react-circular-progressbar/dist/styles.css'
 import './styles/Skill.css'
 

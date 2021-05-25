@@ -70,24 +70,18 @@
     background-color: #E2E8E8;
     cursor: pointer;
     overflow: hidden;
-    animation: shadowout .3s linear;
-    -o-animation: shadowout .3s linear;
-    -moz-animation: shadowout .3s linear;
-    -webkit-animation: shadowout .3s linear;
-    animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation: shadowout .3s linear forwards;
+    -o-animation: shadowout .3s linear forwards;
+    -moz-animation: shadowout .3s linear forwards;
+    -webkit-animation: shadowout .3s linear forwards;
     cursor: none;
 }
 
 .project-btn:hover {
-    animation: shadowin .3s linear;
-    -o-animation: shadowin .3s linear;
-    -moz-animation: shadowin .3s linear;
-    -webkit-animation: shadowin .3s linear;
-    animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation: shadowin .3s linear forwards;
+    -o-animation: shadowin .3s linear forwards;
+    -moz-animation: shadowin .3s linear forwards;
+    -webkit-animation: shadowin .3s linear forwards;
 }
 
 .disabled {
@@ -213,21 +207,21 @@
         font-size: 4.5vw;
         padding: 0 0 .5vh 0;
     }
-    
+
     .project-extras {
         padding-left: 0;
     }
-    
+
     .project-extras-text {
         font-size: 3.5vw;
         max-width: 60vw;
     }
-    
+
     .project-icon {
         width: 7vw;
         height: 7vw;
     }
-    
+
     .project-buttons {
         margin-bottom: 1vh;
         width: 70vw;

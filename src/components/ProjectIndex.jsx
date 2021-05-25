@@ -8,8 +8,10 @@ import {
 } from 'react-ionicons'
 import ProjectCard from './ProjectCard'
 import Pointer from './Pointer'
+
 // Styles
 import './styles/ProjectIndex.css'
+
 // Data
 import { 
     DEV_PROJECTS, 
@@ -20,6 +22,7 @@ import {
     VID_PROJECTS
 
 } from '../constants/Data'
+
 // Images
 import navigate from '../img/navigate.png'
 

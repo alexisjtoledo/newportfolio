@@ -1,9 +1,11 @@
+// COMPONENTS
 import React from 'react'
-import './styles/Slider.css'
 import ReactSlidy from 'react-slidy'
-import 'react-slidy/lib/styles.css'
-
 import { ChevronBack } from 'react-ionicons'
+
+// STYLES
+import 'react-slidy/lib/styles.css'
+import './styles/Slider.css'
 
 const Slider = props => {
 

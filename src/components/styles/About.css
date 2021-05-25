@@ -72,17 +72,17 @@
     height: 2.5vh;
     margin: 2vh 0;
     padding: 0 1vh 1vh 1vh;
-    animation: mouseout 1s;
-    -moz-animation: mouseout 1s;
-    -webkit-animation: mouseout 1s;
-    -o-animation: mouseout 1s;
+    animation: mouseout 1s linear forwards;
+    -moz-animation: mouseout 1s linear forwards;
+    -webkit-animation: mouseout 1s linear forwards;
+    -o-animation: mouseout 1s linear forwards;
 }
 
 .sm-buttons:hover {
-    animation: mousein .5s;
-    -moz-animation: mousein .5s;
-    -webkit-animation: mousein .5s;
-    -o-animation: mousein .5s;
+    animation: mousein .5s linear forwards;
+    -moz-animation: mousein .5s linear forwards;
+    -webkit-animation: mousein .5s linear forwards;
+    -o-animation: mousein .5s linear forwards;
     cursor: pointer;
 }
 
@@ -154,17 +154,16 @@
         margin-top: 0;
         margin-bottom: -3vh;
     }
-    
-    
+
     .about-title {
         font-size: 5vw;
         color: #2C2F2F;
     }
-    
+
     .about-title:last-of-type {
         margin-top: 3vh;
     }
-    
+
     .about-text {
         font-size: 3vw;
         color: #2C2F2F;
@@ -174,7 +173,7 @@
     .skills-mobile {
         display: flex;
     }
-    
+
     .skills {
         display: none;
     }
@@ -185,7 +184,7 @@
     .skills-mobile {
         display: flex;
     }
-    
+
     .skills {
         display: none;
     }

@@ -24,20 +24,17 @@
 .back-arrow {
     width: 5vh;
     height: 5vh;
-    animation: offclick 1s;
-    -o-animation: offclick 1s;
-    -moz-animation: offclick 1s;
-    -webkit-animation: offclick 1s;
+    animation: offclick 1s forwards;
+    -o-animation: offclick 1s forwards;
+    -moz-animation: offclick 1s forwards;
+    -webkit-animation: offclick 1s forwards;
 }
 
 .back-arrow.mouseon {
-    animation: onclick 1s;
-    -o-animation: onclick 1s;
-    -moz-animation: onclick 1s;
-    -webkit-animation: onclick 1s;
-    animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    animation: onclick 1s forwards;
+    -o-animation: onclick 1s forwards;
+    -moz-animation: onclick 1s forwards;
+    -webkit-animation: onclick 1s forwards;
 }
 
 .home-icon {
@@ -47,90 +44,58 @@
 }
 
 @keyframes onclick {
-    from{ margin-top: 0vh; }
-    to{ margin-top: -6vh; }
+    from { margin-top: 0vh; }
+    to { margin-top: -6vh; }
 }
 @-o-keyframes onclick {
-    from{ margin-top: 0vh;}
-    to{ margin-top: -6vh; }
+    from { margin-top: 0vh; }
+    to { margin-top: -6vh; }
 }
 @-webkit-keyframes onclick {
-    from{ margin-top: 0vh;}
-    to{ margin-top: -6vh; }
+    from { margin-top: 0vh; }
+    to { margin-top: -6vh; }
 }
 @-moz-keyframes onclick {
-    from{ margin-top: 0vh;}
-    to{ margin-top: -6vh; }
+    from { margin-top: 0vh; }
+    to { margin-top: -6vh; }
 }
 
 @keyframes offclick {
-    from{ margin-top: -6vh;}
-    to{ margin-top: 0vh; }
+    from { margin-top: -6vh; }
+    to { margin-top: 0vh; }
 }
 @-o-keyframes offclick {
-    from{ margin-top: -6vh;}
+    from{ margin-top: -6vh; }
     to{ margin-top: 0vh; }
 }
 @-webkit-keyframes offclick {
-    from{ margin-top: -6vh;}
-    to{ margin-top: 0vh; }
+    from { margin-top: -6vh; }
+    to { margin-top: 0vh; }
 }
 @-moz-keyframes offclick {
-    from{ margin-top: -6vh;}
-    to{ margin-top: 0vh; }
+    from { margin-top: -6vh; }
+    to { margin-top: 0vh; }
 }
 
 @keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 #000000;
-    }
-    
-    50% {
-        box-shadow: 0 0 2vh #49C0B6;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 #000000;
-    }
+    0% { box-shadow: 0 0 0 #000000; }
+    50% { box-shadow: 0 0 2vh #49C0B6; }
+    100% { box-shadow: 0 0 0 #000000; }
 }
 @-webkit-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 #000000;
-    }
-    
-    50% {
-        box-shadow: 0 0 2vh #49C0B6;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 #000000;
-    }
+    0% { box-shadow: 0 0 0 #000000; }
+    50% { box-shadow: 0 0 2vh #49C0B6; }
+    100% { box-shadow: 0 0 0 #000000; }
 }
 @-o-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 #000000;
-    }
-    
-    50% {
-        box-shadow: 0 0 2vh #49C0B6;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 #000000;
-    }
+    0% { box-shadow: 0 0 0 #000000; }
+    50% { box-shadow: 0 0 2vh #49C0B6; }
+    100% { box-shadow: 0 0 0 #000000; }
 }
 @-moz-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 #000000;
-    }
-    
-    50% {
-        box-shadow: 0 0 2vh #49C0B6;
-    }
-    
-    100% {
-        box-shadow: 0 0 0 #000000;
-    }
+    0% { box-shadow: 0 0 0 #000000; }
+    50% { box-shadow: 0 0 2vh #49C0B6; }
+    100% { box-shadow: 0 0 0 #000000; }
 }
 
 @media (max-width: 800px) {

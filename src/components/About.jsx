@@ -1,15 +1,22 @@
+// COMPONENTS
 import React from 'react'
-import './styles/About.css'
-import photo from '../img/profile.jpg'
 import { LogoLinkedin, LogoGithub, LogoFlickr, Mail } from 'react-ionicons'
 import BackButton from './BackButton'
-import { ABOUT_DATA } from '../constants/Data'
 import Skill from './Skill'
+
+// STYLES
+import './styles/About.css'
+import photo from '../img/profile.jpg'
+
+// DATA
+import { ABOUT_DATA } from '../constants/Data'
+
 
 const About = () => {
 
     const DATA = ABOUT_DATA
 
+    // Click Handlers
     const openGitHub = () => { window.open('https://github.com/alexisjtoledo/', '_blank') }
     const openLinkedIn = () => { window.open('https://www.linkedin.com/in/alexistoledo/?locale=en_US', '_blank') }
     const openFlickr = () => { window.open('http://flickr.com/photos/alexisjtoledo/albums', '_blank') }

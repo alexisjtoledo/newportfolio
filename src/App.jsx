@@ -1,3 +1,4 @@
+/* COMPONENTS */
 import Router from './components/Router'
 
 /* STYLES */
