@@ -38,6 +38,10 @@
     height: 5vh;
 }
 
+.project-description-text {
+    font-size: 1.8vh;
+}
+
 .project-extras {
     display: flex;
     align-items: center;
