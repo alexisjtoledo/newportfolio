@@ -1,7 +1,7 @@
 .project-card {
     width: 80vh;
     height: 75vh;
-    background: #E2E8E8 url(../../img/fabric_texture.png) repeat;
+    background: #e2e8e8 url(../../img/fabric_texture.png) repeat;
     box-shadow: 0 0 5vh #111;
     border-radius: 1vh;
     overflow: hidden;
@@ -24,16 +24,16 @@
 
 .project-title {
     font-size: 2vh;
-    color: rgba(44,47,47,.9);
-    padding-top: .8vh;
+    color: rgba(44, 47, 47, 0.9);
+    padding-top: 0.8vh;
 }
 
 .project-tech {
-    padding: .5vh;
+    padding: 0.5vh;
 }
 
 .project-description {
-    color: rgba(44,47,47,.9);
+    color: rgba(44, 47, 47, 0.9);
     padding: 1vh 0 1.5vh 0;
     height: 5vh;
 }
@@ -45,12 +45,12 @@
 .project-extras {
     display: flex;
     align-items: center;
-    padding: .7vh;
+    padding: 0.7vh;
 }
 
 .project-extras-text {
-    color: rgba(44,47,47,.9);
-    padding: .3vh 0 0 .8vh;
+    color: rgba(44, 47, 47, 0.9);
+    padding: 0.3vh 0 0 0.8vh;
 }
 
 .project-icon {
@@ -67,32 +67,32 @@
 
 .project-btn {
     margin-right: 1vh;
-    border-radius: .5vh;
+    border-radius: 0.5vh;
     display: flex;
     align-items: center;
-    padding: .5vh 1.5vh .5vh 0 ;
-    border: solid .2vh rgba(44,47,47,.7);
-    background-color: #E2E8E8;
+    padding: 0.5vh 1.5vh 0.5vh 0;
+    border: solid 0.2vh rgba(44, 47, 47, 0.7);
+    background-color: #e2e8e8;
     cursor: pointer;
     overflow: hidden;
-    animation: shadowout .3s linear forwards;
-    -o-animation: shadowout .3s linear forwards;
-    -moz-animation: shadowout .3s linear forwards;
-    -webkit-animation: shadowout .3s linear forwards;
+    animation: shadowout 0.3s linear forwards;
+    -o-animation: shadowout 0.3s linear forwards;
+    -moz-animation: shadowout 0.3s linear forwards;
+    -webkit-animation: shadowout 0.3s linear forwards;
     cursor: none;
 }
 
 .project-btn:hover {
-    animation: shadowin .3s linear forwards;
-    -o-animation: shadowin .3s linear forwards;
-    -moz-animation: shadowin .3s linear forwards;
-    -webkit-animation: shadowin .3s linear forwards;
+    animation: shadowin 0.3s linear forwards;
+    -o-animation: shadowin 0.3s linear forwards;
+    -moz-animation: shadowin 0.3s linear forwards;
+    -webkit-animation: shadowin 0.3s linear forwards;
 }
 
 .disabled {
-    background-color: rgba(44,47,47,.3);
-    border-color: rgba(44,47,47,.3);
-    color: rgba(44,47,47,.3);
+    background-color: rgba(44, 47, 47, 0.3);
+    border-color: rgba(44, 47, 47, 0.3);
+    color: rgba(44, 47, 47, 0.3);
     box-shadow: none;
 }
 
@@ -105,8 +105,8 @@
 }
 
 .btn-icon-box {
-    border-radius: .5vh;
-    padding: .5vh;
+    border-radius: 0.5vh;
+    padding: 0.5vh;
 }
 
 .btn-icon {
@@ -115,22 +115,21 @@
 }
 
 .btn-label {
-    padding-top: .3vh;
-    margin-left: .5vh;
+    padding-top: 0.3vh;
+    margin-left: 0.5vh;
     text-transform: uppercase;
     font-size: 1.3vh;
-    color: #2C2F2F;
+    color: #2c2f2f;
 }
 
 .project-tech {
     display: flex;
-
 }
 
 .tech-box {
-    border-radius: .7vh;
-    margin-left: .5vh;
-    border: solid 2px #2C2F2F;
+    border-radius: 0.7vh;
+    margin-left: 0.5vh;
+    border: solid 2px #2c2f2f;
     overflow: hidden;
 }
 
@@ -142,50 +141,81 @@
 .tech-icon {
     width: 2vh;
     height: 2vh;
-    padding-top: .3vh;
+    padding-top: 0.3vh;
     margin: auto;
 }
 
 .tech-logo-text {
-    font-size: 'Gotham Bold', sans-serif;
+    font-size: "Gotham Bold", sans-serif;
     font-size: 1.1vh;
     text-align: center;
-    padding: .7vh .5vh .5vh .5vh;
+    padding: 0.7vh 0.5vh 0.5vh 0.5vh;
 }
-
 
 @keyframes shadowin {
-    from { box-shadow: 0 0 .5vh; }
-    to { box-shadow: 0 0 1vh; }
+    from {
+        box-shadow: 0 0 0.5vh;
+    }
+    to {
+        box-shadow: 0 0 1vh;
+    }
 }
 @-webkit-keyframes shadowin {
-    from { box-shadow: 0 0 .5vh; }
-    to { box-shadow: 0 0 1vh; }
+    from {
+        box-shadow: 0 0 0.5vh;
+    }
+    to {
+        box-shadow: 0 0 1vh;
+    }
 }
 @-moz-keyframes shadowin {
-    from { box-shadow: 0 0 .5vh; }
-    to { box-shadow: 0 0 1vh; }
+    from {
+        box-shadow: 0 0 0.5vh;
+    }
+    to {
+        box-shadow: 0 0 1vh;
+    }
 }
 @-o-keyframes shadowin {
-    from { box-shadow: 0 0 .5vh; }
-    to { box-shadow: 0 0 1vh; }
+    from {
+        box-shadow: 0 0 0.5vh;
+    }
+    to {
+        box-shadow: 0 0 1vh;
+    }
 }
 
 @keyframes shadowout {
-    from { box-shadow: 0 0 1vh; }
-    to { box-shadow: 0 0 .5vh; }
+    from {
+        box-shadow: 0 0 1vh;
+    }
+    to {
+        box-shadow: 0 0 0.5vh;
+    }
 }
 @-webkit-keyframes shadowout {
-    from { box-shadow: 0 0 1vh; }
-    to { box-shadow: 0 0 .5vh; }
+    from {
+        box-shadow: 0 0 1vh;
+    }
+    to {
+        box-shadow: 0 0 0.5vh;
+    }
 }
 @-moz-keyframes shadowout {
-    from { box-shadow: 0 0 1vh; }
-    to { box-shadow: 0 0 .5vh; }
+    from {
+        box-shadow: 0 0 1vh;
+    }
+    to {
+        box-shadow: 0 0 0.5vh;
+    }
 }
 @-o-keyframes shadowout {
-    from { box-shadow: 0 0 1vh; }
-    to { box-shadow: 0 0 .5vh; }
+    from {
+        box-shadow: 0 0 1vh;
+    }
+    to {
+        box-shadow: 0 0 0.5vh;
+    }
 }
 
 @media (max-width: 800px) {
@@ -210,7 +240,7 @@
 
     .project-title {
         font-size: 4.5vw;
-        padding: 0 0 .5vh 0;
+        padding: 0 0 0.5vh 0;
     }
 
     .project-extras {
@@ -245,6 +275,6 @@
     }
 
     .tech-box {
-        margin-top: .5vh;
+        margin-top: 0.5vh;
     }
 }

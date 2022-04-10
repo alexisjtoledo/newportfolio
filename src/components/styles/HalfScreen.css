@@ -6,12 +6,13 @@
 }
 
 .main-container.left {
-    background: url(../../img/bg-left.jpg), url(../../img/fabric_texture_dark.png);
+    background: url(../../img/bg-left.jpg),
+        url(../../img/fabric_texture_dark.png);
     background-position: left bottom;
     background-repeat: no-repeat, repeat;
     background-size: auto 100vh, auto auto;
     background-blend-mode: multiply;
-    color: #E2E8E8;
+    color: #e2e8e8;
 }
 
 .main-container.right {
@@ -20,54 +21,55 @@
     background-repeat: no-repeat, repeat;
     background-size: auto 100vh, auto auto;
     background-blend-mode: multiply;
-    color: #2C2F2F;
+    color: #2c2f2f;
 }
 
 .cover.left {
-    content: '';
-    background: url(../../img/fabric_texture_dark.png) #2C2F2F repeat;
+    content: "";
+    background: url(../../img/fabric_texture_dark.png) #2c2f2f repeat;
     background-blend-mode: multiply;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 50vw;
     left: 0;
-    animation: fadein .5s linear forwards;
-    -moz-animation: fadein .5s linear forwards;
-    -o-animation: fadein .5s linear forwards;
-    -webkit-animation: fadein .5s linear forwards;
+    animation: fadein 0.5s linear forwards;
+    -moz-animation: fadein 0.5s linear forwards;
+    -o-animation: fadein 0.5s linear forwards;
+    -webkit-animation: fadein 0.5s linear forwards;
 }
 
 .cover.right {
-    content: '';
-    background: url(../../img/fabric_texture.png) #E2E8E8 repeat;
+    content: "";
+    background: url(../../img/fabric_texture.png) #e2e8e8 repeat;
     background-blend-mode: multiply;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 50vw;
-    animation: fadein .5s linear forwards;
-    -moz-animation: fadein .5s linear forwards;
-    -o-animation: fadein .5s linear forwards;
-    -webkit-animation: fadein .5s linear forwards;
+    animation: fadein 0.5s linear forwards;
+    -moz-animation: fadein 0.5s linear forwards;
+    -o-animation: fadein 0.5s linear forwards;
+    -webkit-animation: fadein 0.5s linear forwards;
 }
 
 .cover.right.transparent {
-    animation: fadeout .5s linear forwards;
-    -moz-animation: fadeout .5s linear forwards;
-    -o-animation: fadeout .5s linear forwards;
-    -webkit-animation: fadeout .5s linear forwards;
+    animation: fadeout 0.5s linear forwards;
+    -moz-animation: fadeout 0.5s linear forwards;
+    -o-animation: fadeout 0.5s linear forwards;
+    -webkit-animation: fadeout 0.5s linear forwards;
 }
 
 .cover.left.transparent {
-    animation: fadeout .5s linear forwards;
-    -moz-animation: fadeout .5s linear forwards;
-    -o-animation: fadeout .5s linear forwards;
-    -webkit-animation: fadeout .5s linear forwards;
+    animation: fadeout 0.5s linear forwards;
+    -moz-animation: fadeout 0.5s linear forwards;
+    -o-animation: fadeout 0.5s linear forwards;
+    -webkit-animation: fadeout 0.5s linear forwards;
 }
 
-h1, h2 {
+h1,
+h2 {
     background: none !important;
     z-index: 10;
 }
@@ -90,7 +92,7 @@ h1, h2 {
 .button {
     padding: 1vh 1vw;
     margin: 1vh 1vw;
-    border-radius: .5vh;
+    border-radius: 0.5vh;
     width: 10vw;
     z-index: 10;
     font-size: 1vh;
@@ -98,29 +100,29 @@ h1, h2 {
 
 #about.button {
     align-self: flex-end;
-    border: solid 1px #E2E8E8;
-    color: #E2E8E8;
+    border: solid 1px #e2e8e8;
+    color: #e2e8e8;
     background: none;
 }
 
 #about.button:hover {
     border: solid 1px transparent;
-    color: #2C2F2F;
-    background-color: #E2E8E8;
+    color: #2c2f2f;
+    background-color: #e2e8e8;
     cursor: none;
 }
 
 #contact.button {
     align-self: flex-start;
-    border: solid 1px #2C2F2F;
-    color: #2C2F2F;
+    border: solid 1px #2c2f2f;
+    color: #2c2f2f;
     background: none;
 }
 
 #contact.button:hover {
     border: solid 1px transparent;
-    color: #E2E8E8;
-    background-color: #2C2F2F;
+    color: #e2e8e8;
+    background-color: #2c2f2f;
     cursor: none;
 }
 
@@ -133,33 +135,33 @@ h1, h2 {
 }
 
 .title-container.left {
-    animation: leftbuttonoff .5s;
-    -moz-animation: leftbuttonoff .5s;
-    -webkit-animation: leftbuttonoff .5s;
-    -o-animation: leftbuttonoff .5s;
+    animation: leftbuttonoff 0.5s;
+    -moz-animation: leftbuttonoff 0.5s;
+    -webkit-animation: leftbuttonoff 0.5s;
+    -o-animation: leftbuttonoff 0.5s;
 }
 
 .title-container.right {
-    animation: rightbuttonoff .5s;
-    -moz-animation: rightbuttonoff .5s;
-    -webkit-animation: rightbuttonoff .5s;
-    -o-animation: rightbuttonoff .5s;
+    animation: rightbuttonoff 0.5s;
+    -moz-animation: rightbuttonoff 0.5s;
+    -webkit-animation: rightbuttonoff 0.5s;
+    -o-animation: rightbuttonoff 0.5s;
 }
 
 .title-container.right.transparent {
-    background-color: rgba(226,232,232,.7);
-    animation: rightbuttonon .5s;
-    -moz-animation: rightbuttonon .5s;
-    -webkit-animation: rightbuttonon .5s;
-    -o-animation: rightbuttonon .5s;
+    background-color: rgba(226, 232, 232, 0.7);
+    animation: rightbuttonon 0.5s;
+    -moz-animation: rightbuttonon 0.5s;
+    -webkit-animation: rightbuttonon 0.5s;
+    -o-animation: rightbuttonon 0.5s;
 }
 
 .title-container.left.transparent {
-    background-color: rgba(44,47,47,.7);
-    animation: leftbuttonon .5s;
-    -moz-animation: leftbuttonon .5s;
-    -webkit-animation: leftbuttonon .5s;
-    -o-animation: leftbuttonon .5s;
+    background-color: rgba(44, 47, 47, 0.7);
+    animation: leftbuttonon 0.5s;
+    -moz-animation: leftbuttonon 0.5s;
+    -webkit-animation: leftbuttonon 0.5s;
+    -o-animation: leftbuttonon 0.5s;
 }
 
 #title {
@@ -169,103 +171,199 @@ h1, h2 {
 /* ANIMATIONS */
 
 @keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 @-webkit-keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 @-moz-keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 @-o-keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes rightbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(226,232,232,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
 }
 @-o-keyframes rightbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(226,232,232,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
 }
 @-webkit-keyframes rightbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(226,232,232,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
 }
 @-moz-keyframes rightbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(226,232,232,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
 }
 
 @keyframes rightbuttonoff {
-    from { background-color: rgba(226,232,232,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-o-keyframes rightbuttonoff {
-    from { background-color: rgba(226,232,232,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-webkit-keyframes rightbuttonoff {
-    from { background-color: rgba(226,232,232,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-moz-keyframes rightbuttonoff {
-    from { background-color: rgba(226,232,232,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(226, 232, 232, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 
 @keyframes leftbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(44,47,47,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
 }
 @-o-keyframes leftbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(44,47,47,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
 }
 @-webkit-keyframes leftbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(44,47,47,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
 }
 @-moz-keyframes leftbuttonon {
-    from { background-color: transparent; }
-    to { background-color: rgba(44,47,47,.7); }
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
 }
 
 @keyframes leftbuttonoff {
-    from { background-color: rgba(44,47,47,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-o-keyframes leftbuttonoff {
-    from { background-color: rgba(44,47,47,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-webkit-keyframes leftbuttonoff {
-    from { background-color: rgba(44,47,47,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 @-moz-keyframes leftbuttonoff {
-    from { background-color: rgba(44,47,47,.7); }
-    to { background-color: transparent; }
+    from {
+        background-color: rgba(44, 47, 47, 0.7);
+    }
+    to {
+        background-color: transparent;
+    }
 }

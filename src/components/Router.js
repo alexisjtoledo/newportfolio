@@ -1,78 +1,65 @@
 // COMPONENTS
-import React, { 
-    useEffect, useState 
-} from 'react'
-import {
-    BrowserRouter,
-    Switch,
-    Route
-} from 'react-router-dom'
-import Home from './Home'
-import FrontEndIndex from './FrontEndIndex'
-import GraphicDesignIndex from './GraphicDesignIndex'
-import About from './About'
-import GDSectionIndex from './GDSectionIndex'
-import MobileHome from './MobileHome'
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./Home";
+import FrontEndIndex from "./FrontEndIndex";
+import GraphicDesignIndex from "./GraphicDesignIndex";
+import About from "./About";
+import GDSectionIndex from "./GDSectionIndex";
+import MobileHome from "./MobileHome";
 
 const Router = () => {
-
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState(false);
 
     const detectPortrait = () => {
-        const width = window.innerWidth
+        const width = window.innerWidth;
         if (width < 800) {
-            setIsMobile(true)
+            setIsMobile(true);
         }
-    }
+    };
 
     const changePlatform = () => {
-        const newWidth = window.innerWidth
+        const newWidth = window.innerWidth;
         if (newWidth < 800) {
-            setIsMobile(true)
+            setIsMobile(true);
         } else {
-            setIsMobile(false)
+            setIsMobile(false);
         }
-    }
+    };
 
     useEffect(() => {
-        window.addEventListener('resize', () => changePlatform())
-        detectPortrait()
-        return () => window.removeEventListener('resize', changePlatform)
-    }, [])
+        window.addEventListener("resize", () => changePlatform());
+        detectPortrait();
+        return () => window.removeEventListener("resize", changePlatform);
+    }, []);
 
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/developer'>
+                <Route path="/developer">
                     <FrontEndIndex />
                 </Route>
-                <Route path='/section'>
+                <Route path="/section">
                     <GDSectionIndex />
                 </Route>
-                <Route path='/designer'>
+                <Route path="/designer">
                     <GraphicDesignIndex />
                 </Route>
-                <Route path='/about'>
+                <Route path="/about">
                     <About />
                 </Route>
-                <Route path='/home'>
-                    {
-                        isMobile ? <MobileHome /> : <Home /> 
-                    }
+                <Route path="/home">
+                    {isMobile ? <MobileHome /> : <Home />}
                 </Route>
-                <Route path='/index'>
-                    {
-                        isMobile ? <MobileHome /> : <Home /> 
-                    }
+                <Route path="/index">
+                    {isMobile ? <MobileHome /> : <Home />}
                 </Route>
-                <Route exact path='/'>
-                    {
-                        isMobile ? <MobileHome /> : <Home /> 
-                    }
+                <Route exact path="/">
+                    {isMobile ? <MobileHome /> : <Home />}
                 </Route>
             </Switch>
         </BrowserRouter>
-    )
-}
+    );
+};
 
-export default Router
+export default Router;

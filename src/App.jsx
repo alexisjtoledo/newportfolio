@@ -1,13 +1,11 @@
 /* COMPONENTS */
-import Router from './components/Router'
+import Router from "./components/Router";
 
 /* STYLES */
-import './constants/globalStyles.css'
+import "./constants/globalStyles.css";
 
 function App() {
-  return (
-    <Router />
-  )
+    return <Router />;
 }
 
-export default App
+export default App;

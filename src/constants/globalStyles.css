@@ -1,50 +1,70 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  background: #2C2F2F url(../img/fabric_texture_dark.png) repeat;
-  background-blend-mode: hard-light;
-  cursor: none;
+    background: #2c2f2f url(../img/fabric_texture_dark.png) repeat;
+    background-blend-mode: hard-light;
+    cursor: none;
 }
 
 body {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 p {
-  font-family: 'Gotham Book', sans-serif;
+    font-family: "Gotham Book", sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Gotham Black', sans-serif;
+h1,
+h2 {
+    font-family: "Gotham Black", sans-serif;
 }
 
-h3, h4, h5, h6 {
-  font-family: 'Gotham Bold', sans-serif;
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Gotham Bold", sans-serif;
 }
 
 strong {
-  font-family: 'Gotham Bold', sans-serif;
+    font-family: "Gotham Bold", sans-serif;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @-o-keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

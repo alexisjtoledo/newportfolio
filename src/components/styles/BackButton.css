@@ -9,7 +9,7 @@
     height: 5vh;
     border-radius: 5vh;
     overflow: hidden;
-    background-color: #E2E8E8;
+    background-color: #e2e8e8;
     animation: pulse 5s infinite;
     -o-animation: pulse 5s infinite;
     -moz-animation: pulse 5s infinite;
@@ -44,58 +44,114 @@
 }
 
 @keyframes onclick {
-    from { margin-top: 0vh; }
-    to { margin-top: -6vh; }
+    from {
+        margin-top: 0vh;
+    }
+    to {
+        margin-top: -6vh;
+    }
 }
 @-o-keyframes onclick {
-    from { margin-top: 0vh; }
-    to { margin-top: -6vh; }
+    from {
+        margin-top: 0vh;
+    }
+    to {
+        margin-top: -6vh;
+    }
 }
 @-webkit-keyframes onclick {
-    from { margin-top: 0vh; }
-    to { margin-top: -6vh; }
+    from {
+        margin-top: 0vh;
+    }
+    to {
+        margin-top: -6vh;
+    }
 }
 @-moz-keyframes onclick {
-    from { margin-top: 0vh; }
-    to { margin-top: -6vh; }
+    from {
+        margin-top: 0vh;
+    }
+    to {
+        margin-top: -6vh;
+    }
 }
 
 @keyframes offclick {
-    from { margin-top: -6vh; }
-    to { margin-top: 0vh; }
+    from {
+        margin-top: -6vh;
+    }
+    to {
+        margin-top: 0vh;
+    }
 }
 @-o-keyframes offclick {
-    from{ margin-top: -6vh; }
-    to{ margin-top: 0vh; }
+    from {
+        margin-top: -6vh;
+    }
+    to {
+        margin-top: 0vh;
+    }
 }
 @-webkit-keyframes offclick {
-    from { margin-top: -6vh; }
-    to { margin-top: 0vh; }
+    from {
+        margin-top: -6vh;
+    }
+    to {
+        margin-top: 0vh;
+    }
 }
 @-moz-keyframes offclick {
-    from { margin-top: -6vh; }
-    to { margin-top: 0vh; }
+    from {
+        margin-top: -6vh;
+    }
+    to {
+        margin-top: 0vh;
+    }
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 #000000; }
-    50% { box-shadow: 0 0 2vh #49C0B6; }
-    100% { box-shadow: 0 0 0 #000000; }
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    50% {
+        box-shadow: 0 0 2vh #49c0b6;
+    }
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
 }
 @-webkit-keyframes pulse {
-    0% { box-shadow: 0 0 0 #000000; }
-    50% { box-shadow: 0 0 2vh #49C0B6; }
-    100% { box-shadow: 0 0 0 #000000; }
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    50% {
+        box-shadow: 0 0 2vh #49c0b6;
+    }
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
 }
 @-o-keyframes pulse {
-    0% { box-shadow: 0 0 0 #000000; }
-    50% { box-shadow: 0 0 2vh #49C0B6; }
-    100% { box-shadow: 0 0 0 #000000; }
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    50% {
+        box-shadow: 0 0 2vh #49c0b6;
+    }
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
 }
 @-moz-keyframes pulse {
-    0% { box-shadow: 0 0 0 #000000; }
-    50% { box-shadow: 0 0 2vh #49C0B6; }
-    100% { box-shadow: 0 0 0 #000000; }
+    0% {
+        box-shadow: 0 0 0 #000000;
+    }
+    50% {
+        box-shadow: 0 0 2vh #49c0b6;
+    }
+    100% {
+        box-shadow: 0 0 0 #000000;
+    }
 }
 
 @media (max-width: 800px) {

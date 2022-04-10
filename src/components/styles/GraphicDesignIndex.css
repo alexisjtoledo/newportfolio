@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #2C2F2F url(../../img/fabric_texture_dark.png) repeat;
+    background: #2c2f2f url(../../img/fabric_texture_dark.png) repeat;
     background-blend-mode: hard-light;
     animation: fadein 1s linear forwards;
     -moz-animation: fadein 1s linear forwards;
@@ -16,7 +16,7 @@
 }
 
 .section-button {
-    background: #E2E8E8 url(../../img/fabric_texture.png) repeat;
+    background: #e2e8e8 url(../../img/fabric_texture.png) repeat;
     border-radius: 1vh;
     width: 60vw;
     height: 10vh;
@@ -37,42 +37,74 @@
 }
 
 .section-title {
-    color: #2C2F2F;
+    color: #2c2f2f;
     font-size: 3vh;
 }
 
 @keyframes glow {
-    from { box-shadow: 0 0 5vh #111111; }
-    to { box-shadow: 0 0 1vh #49C0B6; }
+    from {
+        box-shadow: 0 0 5vh #111111;
+    }
+    to {
+        box-shadow: 0 0 1vh #49c0b6;
+    }
 }
 @-webkit-keyframes glow {
-    from { box-shadow: 0 0 5vh #111111; }
-    to { box-shadow: 0 0 7vh #49C0B6; }
+    from {
+        box-shadow: 0 0 5vh #111111;
+    }
+    to {
+        box-shadow: 0 0 7vh #49c0b6;
+    }
 }
 @-moz-keyframes glow {
-    from { box-shadow: 0 0 5vh #111111; }
-    to { box-shadow: 0 0 7vh #49C0B6; }
+    from {
+        box-shadow: 0 0 5vh #111111;
+    }
+    to {
+        box-shadow: 0 0 7vh #49c0b6;
+    }
 }
 @-o-keyframes glow {
-    from { box-shadow: 0 0 5vh #111; }
-    to { box-shadow: 0 0 7vh #49C0B6; }
+    from {
+        box-shadow: 0 0 5vh #111;
+    }
+    to {
+        box-shadow: 0 0 7vh #49c0b6;
+    }
 }
 
 @keyframes glowout {
-    from { box-shadow: 0 0 1vh #49C0B6; }
-    to { box-shadow: 0 0 5vh #111111; }
+    from {
+        box-shadow: 0 0 1vh #49c0b6;
+    }
+    to {
+        box-shadow: 0 0 5vh #111111;
+    }
 }
 @-webkit-keyframes glowout {
-    from { box-shadow: 0 0 1vh #49C0B6; }
-    to { box-shadow: 0 0 5vh #111111; }
+    from {
+        box-shadow: 0 0 1vh #49c0b6;
+    }
+    to {
+        box-shadow: 0 0 5vh #111111;
+    }
 }
 @-moz-keyframes glowout {
-    from { box-shadow: 0 0 1vh #49C0B6; }
-    to { box-shadow: 0 0 5vh #111111; }
+    from {
+        box-shadow: 0 0 1vh #49c0b6;
+    }
+    to {
+        box-shadow: 0 0 5vh #111111;
+    }
 }
 @-o-keyframes glowout {
-    from { box-shadow: 0 0 1vh #49C0B6; }
-    to { box-shadow: 0 0 5vh #111111; }
+    from {
+        box-shadow: 0 0 1vh #49c0b6;
+    }
+    to {
+        box-shadow: 0 0 5vh #111111;
+    }
 }
 
 @media (max-width: 800px) {

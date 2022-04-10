@@ -17,11 +17,11 @@
 
 .projects-title {
     text-align: center;
-    position:fixed;
+    position: fixed;
     left: 20vw;
     top: 4vh;
     width: 60vw;
-    color: #E2E8E8;
+    color: #e2e8e8;
     font-size: 3vh;
 }
 
@@ -33,7 +33,7 @@
 
 .navigate-img {
     height: auto;
-    width: 20vw;   
+    width: 20vw;
 }
 
 .project-card-container {
@@ -71,7 +71,7 @@
     position: fixed;
     top: 40vh;
     left: 10vh;
-    color: rgba(226,232,232,.2);
+    color: rgba(226, 232, 232, 0.2);
     text-align: left;
     z-index: -5;
 }
@@ -83,7 +83,7 @@
     position: fixed;
     top: 40vh;
     right: 10vh;
-    color: rgba(226,232,232,.2);
+    color: rgba(226, 232, 232, 0.2);
     text-align: right;
     z-index: -5;
 }
@@ -100,7 +100,11 @@
         padding: 5vw;
     }
 
-    .prev, .next, .next-text, .prev-text, .navigate {
+    .prev,
+    .next,
+    .next-text,
+    .prev-text,
+    .navigate {
         display: none;
     }
 

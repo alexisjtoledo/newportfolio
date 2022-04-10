@@ -16,7 +16,7 @@
     display: flex;
     width: 80vw;
     height: auto;
-    background: #E2E8E8 url(../../img/fabric_texture.png) repeat;
+    background: #e2e8e8 url(../../img/fabric_texture.png) repeat;
     box-shadow: 0 0 10vh #111111;
     border-radius: 10px;
     margin-top: -10vh;
@@ -35,7 +35,7 @@
     border-radius: 10vw;
     overflow: hidden;
     box-shadow: 0 0 5vh #111111;
-    border: solid 1vh #E2E8E8;
+    border: solid 1vh #e2e8e8;
     z-index: 5;
 }
 
@@ -46,7 +46,7 @@
 
 .about-title {
     font-size: 3vh;
-    color: #2C2F2F;
+    color: #2c2f2f;
 }
 
 .about-title:last-of-type {
@@ -55,12 +55,12 @@
 
 .about-text {
     font-size: 2vh;
-    color: #2C2F2F;
+    color: #2c2f2f;
     margin-top: 1.5vh;
 }
 
 .social-buttons {
-    display:inline;
+    display: inline;
     list-style-type: none;
 }
 
@@ -77,10 +77,10 @@
 }
 
 .sm-buttons:hover {
-    animation: mousein .5s linear forwards;
-    -moz-animation: mousein .5s linear forwards;
-    -webkit-animation: mousein .5s linear forwards;
-    -o-animation: mousein .5s linear forwards;
+    animation: mousein 0.5s linear forwards;
+    -moz-animation: mousein 0.5s linear forwards;
+    -webkit-animation: mousein 0.5s linear forwards;
+    -o-animation: mousein 0.5s linear forwards;
     cursor: pointer;
 }
 
@@ -94,37 +94,69 @@
 }
 
 @keyframes mousein {
-    from {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
-    to {border-bottom: #49C0B6 solid 2px;}
+    from {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
+    to {
+        border-bottom: #49c0b6 solid 2px;
+    }
 }
 @-moz-keyframes mousein {
-    from {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
-    to {border-bottom: #49C0B6 solid 2px;}
+    from {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
+    to {
+        border-bottom: #49c0b6 solid 2px;
+    }
 }
 @-webkit-keyframes mousein {
-    from {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
-    to {border-bottom: #49C0B6 solid 2px;}
+    from {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
+    to {
+        border-bottom: #49c0b6 solid 2px;
+    }
 }
 @-o-keyframes mousein {
-    from {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
-    to {border-bottom: #49C0B6 solid 2px;}
+    from {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
+    to {
+        border-bottom: #49c0b6 solid 2px;
+    }
 }
 
 @keyframes mouseout {
-    from {border-bottom: #49C0B6 solid 2px;}
-    to {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
+    from {
+        border-bottom: #49c0b6 solid 2px;
+    }
+    to {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
 }
 @-o-keyframes mouseout {
-    from {border-bottom: #49C0B6 solid 2px;}
-    to {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
+    from {
+        border-bottom: #49c0b6 solid 2px;
+    }
+    to {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
 }
 @-webkit-keyframes mouseout {
-    from {border-bottom: #49C0B6 solid 2px;}
-    to {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
+    from {
+        border-bottom: #49c0b6 solid 2px;
+    }
+    to {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
 }
 @-moz-keyframes mouseout {
-    from {border-bottom: #49C0B6 solid 2px;}
-    to {border-bottom: rgba(44, 47, 47, 0) 2px solid;}
+    from {
+        border-bottom: #49c0b6 solid 2px;
+    }
+    to {
+        border-bottom: rgba(44, 47, 47, 0) 2px solid;
+    }
 }
 
 @media (max-width: 800px) {
@@ -142,7 +174,7 @@
         max-width: 80vw;
         margin: 8vw 5vw;
     }
-    
+
     .picture {
         width: 15vh;
         height: 15vh;
@@ -152,14 +184,14 @@
         width: 15vh;
         height: 15vh;
         border-radius: 15vh;
-        border: solid 1vw #E2E8E8;
+        border: solid 1vw #e2e8e8;
         margin-top: 3vh;
         margin-bottom: -3vh;
     }
 
     .about-title {
         font-size: 5vw;
-        color: #2C2F2F;
+        color: #2c2f2f;
     }
 
     .about-title:last-of-type {
@@ -168,7 +200,7 @@
 
     .about-text {
         font-size: 3vw;
-        color: #2C2F2F;
+        color: #2c2f2f;
         margin-top: 1.5vh;
     }
 
@@ -179,7 +211,6 @@
     .skills {
         display: none;
     }
-
 }
 
 @media (max-width: 1130px) {

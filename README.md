@@ -4,13 +4,11 @@ This is the new version of my Personal Portfolio, a virtual space to show my wor
 
 ## Built With
 
-- [ReactJS](https://reactjs.org/)
-- [React Router](https://reactrouter.com/web/guides/quick-start)
-- [Firebase](https://console.firebase.google.com/)
-- [IonIcons](https://ionic.io/ionicons)
-- [React Circular ProgressBar](https://www.npmjs.com/package/react-circular-progressbar)
-- [React Slidy](https://react-slidy.vercel.app/)
-- [GitHub Pages](https://pages.github.com/)
+-   [ReactJS](https://reactjs.org/)
+-   [React Router](https://reactrouter.com/web/guides/quick-start)
+-   [Firebase](https://console.firebase.google.com/)
+-   [IonIcons](https://ionic.io/ionicons)
+-   [React Slidy](https://react-slidy.vercel.app/)
 
 ## Live view
 
