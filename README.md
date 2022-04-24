@@ -10,13 +10,13 @@ This is the new version of my Personal Portfolio, a virtual space to show my wor
 -   [IonIcons](https://ionic.io/ionicons)
 -   [React Slidy](https://react-slidy.vercel.app/)
 
-## Performance
-
-![Web performance](src/img/performance.png "Web performance")
-
 ## Live view
 
 [Visit my website!](https://alexistoledo.dev)
+
+## Performance
+
+![Web performance](src/img/performance.png "Web performance")
 
 ## Web
 
