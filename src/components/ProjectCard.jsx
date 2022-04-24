@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
     const { projects, margin } = props;
 
     return (
-        <Fragment>
+        <>
             {projects.map((item) => (
                 <Fragment key={item.id}>
                     <div
@@ -51,7 +51,7 @@ const ProjectCard = (props) => {
                             </div>
                             <div className="project-extras">
                                 {item.role ? (
-                                    <Fragment>
+                                    <>
                                         <div className="project-icon">
                                             <PersonOutline
                                                 width="100%"
@@ -62,12 +62,12 @@ const ProjectCard = (props) => {
                                         <p className="project-extras-text">
                                             <strong>Role:</strong> {item.role}
                                         </p>
-                                    </Fragment>
+                                    </>
                                 ) : null}
                             </div>
                             <div className="project-extras">
                                 {item.launchdate ? (
-                                    <Fragment>
+                                    <>
                                         <div className="project-icon">
                                             <CalendarOutline
                                                 width="100%"
@@ -79,7 +79,7 @@ const ProjectCard = (props) => {
                                             <strong>Date:</strong>{" "}
                                             {item.launchdate}
                                         </p>
-                                    </Fragment>
+                                    </>
                                 ) : null}
                             </div>
                             <div className="project-buttons">
@@ -89,7 +89,7 @@ const ProjectCard = (props) => {
                     </div>
                 </Fragment>
             ))}
-        </Fragment>
+        </>
     );
 };
 
@@ -102,7 +102,7 @@ export const Buttons = (props) => {
     };
 
     return (
-        <Fragment>
+        <>
             {data.map((item) => (
                 <button
                     className={`project-btn ${item.style} ${item.type}`}
@@ -155,7 +155,7 @@ export const Buttons = (props) => {
                     <p className="btn-label">{item.text}</p>
                 </button>
             ))}
-        </Fragment>
+        </>
     );
 };
 
@@ -163,7 +163,7 @@ export const Technologies = (props) => {
     const techs = props.data;
 
     return (
-        <Fragment>
+        <>
             {techs.map((item) =>
                 item.used === false ? null : (
                     <div
@@ -412,7 +412,7 @@ export const Technologies = (props) => {
                     </div>
                 ),
             )}
-        </Fragment>
+        </>
     );
 };
 

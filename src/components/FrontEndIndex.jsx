@@ -9,10 +9,10 @@ const FrontEndIndex = () => {
     const [type] = useState(history.location.state.type);
 
     return (
-        <div>
+        <article>
             <BackButton />
             <ProjectIndex type={type} />
-        </div>
+        </article>
     );
 };
 

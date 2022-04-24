@@ -10,10 +10,10 @@ const GDSectionIndex = () => {
     const [type] = useState(history.location.state.type);
 
     return (
-        <div>
+        <article>
             <BackButton />
             <ProjectIndex type={type} selected={which} />
-        </div>
+        </article>
     );
 };
 
